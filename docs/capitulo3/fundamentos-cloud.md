@@ -1,6 +1,6 @@
 # CAPÍTULO 3: FUNDAMENTOS DE CLOUD COMPUTING
 
-## 3.1. Definición y características esenciales
+## 3.1. Definición Y Características Esenciales
 
 **¿Qué es Cloud Computing?:**
 
@@ -422,7 +422,7 @@ for result in response['ResultsByTime']:
    - Asignación de costes por proyecto/departamento
    - Análisis de ROI
 
-## 3.2. Modelos de Servicio (IaaS, PaaS, SaaS)
+## 3.2. Modelos De Servicio (IaaS, PaaS, SaaS)
 
 **Visión General de los Modelos:**
 
@@ -1608,7 +1608,7 @@ if __name__ == '__main__':
 - Compartir con equipo
 - Sin infraestructura propia
 
-## 3.3. Modelos de Despliegue
+## 3.3. Modelos De Despliegue
 
 **Nube Pública:**
 
@@ -1696,7 +1696,7 @@ Nube Pública (AWS/Azure):
 
 ---
 
-## 3.4. Beneficios y desventajas de Cloud Computing
+## 3.4. Beneficios Y Desventajas De Cloud Computing
 
 **Beneficios principales:**
 
@@ -2135,7 +2135,7 @@ Además, proveedores invierten en energías renovables:
 - ❌ Transferencias masivas continuas de datos
 
 
-## 3.5. Retos y desafíos en Cloud Computing
+## 3.5. Retos Y Desafíos En Cloud Computing
 
 **Visión general de retos:**
 
@@ -2542,7 +2542,7 @@ budgets.create_budget(
 
 ---
 
-## 3.6. Estrategias de Adopción de Cloud Computing
+## 3.6. Estrategias De Adopción De Cloud Computing
 
 **Ciclo de Vida de Adopción:**
 
@@ -2719,7 +2719,7 @@ Para elegir la estrategia apropiada de adopción, considerar:
 
 ---
 
-## 3.7. Regiones y Disponibilidad
+## 3.7. Regiones Y Disponibilidad
 
 **Regiones (Regions):**
 
@@ -2814,7 +2814,7 @@ Load Balancer (99.99%) → App Server (99.95%) → Database (99.99%)
 = 0.9993 = 99.93%
 ```
 
-## 3.5. Escalabilidad
+## 3.8. Escalabilidad
 
 **Escalado Vertical (Scale Up):**
 
@@ -2978,7 +2978,7 @@ cluster_id = emr.run_job_flow(
 )
 ```
 
-## 3.6. Modelos de Costes
+## 3.9. Modelos De Costes
 
 **CAPEX vs OPEX:**
 

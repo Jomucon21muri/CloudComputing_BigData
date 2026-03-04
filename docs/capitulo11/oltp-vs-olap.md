@@ -1,13 +1,11 @@
-# Capítulo 11: OLTP vs OLAP - sistemas transaccionales y analíticos
-
-## Introducción
+# CAPÍTULO 11: OLTP VS OLAP - SISTEMAS TRANSACCIONALES Y ANALÍTICOS
 
 !!! abstract "Dos Paradigmas Fundamentales"
     Los sistemas de información empresariales se dividen en dos categorías fundamentales: **OLTP** (sistemas transaccionales para operaciones) y **OLAP** (sistemas analíticos para toma de decisiones). Comprender sus diferencias es crítico para arquitecturas de datos efectivas.
 
 ---
 
-## OLTP (Online Transaction Processing)
+## 11.1. OLTP (Online Transaction Processing)
 
 !!! info "Definición"
     **OLTP** son sistemas optimizados para procesar grandes volúmenes de **transacciones** cortas y frecuentes, garantizando **ACID** (Atomicidad, Consistencia, Aislamiento, Durabilidad).
@@ -250,7 +248,7 @@ COMMIT;
 
 ---
 
-## OLAP (Online Analytical Processing)
+## 11.2. OLAP (Online Analytical Processing)
 
 !!! info "Definición"
     **OLAP** son sistemas optimizados para **análisis** y **consultas complejas** sobre grandes volúmenes de datos históricos, con énfasis en agregaciones y multidimensionalidad.
@@ -282,7 +280,7 @@ COMMIT;
 
 ---
 
-## OLTP vs OLAP: comparación completa
+## 11.3. OLTP Vs OLAP: Comparación Completa
 
 ```mermaid
 graph TD
@@ -331,7 +329,7 @@ graph TD
 
 ---
 
-## Modelado dimensional: Star Schema
+## 11.4. Modelado Dimensional: Star Schema
 
 !!! success "Star Schema"
     El **Star Schema** es el modelo dimensional más común, con una tabla de **hechos** central rodeada de tablas de **dimensiones**.

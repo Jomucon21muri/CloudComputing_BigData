@@ -1,6 +1,6 @@
-# Capítulo 8: Fundamentos de Big Data y minería de datos
+# CAPÍTULO 8: FUNDAMENTOS DE BIG DATA Y MINERÍA DE DATOS
 
-## Introducción a Big Data
+## 8.1. Introducción A Big Data
 
 **¿Qué es Big Data?**
 
@@ -47,7 +47,7 @@ graph TD
 
 ---
 
-## Las 5 V's de Big Data
+## 8.2. Las 5 V's De Big Data
 
 Big Data se caracteriza por **cinco dimensiones fundamentales**:
 
@@ -202,7 +202,7 @@ graph LR
 
 ---
 
-## Gobierno de datos
+## 8.3. Gobierno De Datos
 
 **Definición:**
 
@@ -346,7 +346,7 @@ La norma **ISO 38505** presenta **áreas de trabajo clave** en el gobierno de da
 
 ---
 
-## Small Data vs Big Data
+## 8.4. Small Data Vs Big Data
 
 **¿Qué es Small Data?**
 
@@ -373,7 +373,7 @@ La norma **ISO 38505** presenta **áreas de trabajo clave** en el gobierno de da
 
 ---
 
-## Data Warehouse vs Data Lake
+## 8.5. Data Warehouse Vs Data Lake
 
 **Data Warehouse:**
 
@@ -527,7 +527,7 @@ print("✅ ETL completado: Data Lake → Data Warehouse")
 
 ---
 
-## Machine Learning vs Deep Learning
+## 8.6. Machine Learning Vs Deep Learning
 
 **Machine Learning:**
 
@@ -649,7 +649,7 @@ print(f"Accuracy: {accuracy:.2%}")  # Ejemplo: 71%
 
 ---
 
-## Relación entre Big Data, AI y Data Science
+## 8.7. Relación Entre Big Data, AI Y Data Science
 
 **Definiciones:**
 

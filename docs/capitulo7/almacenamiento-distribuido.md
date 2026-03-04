@@ -1,6 +1,6 @@
-# Capítulo 7: Tecnologías de almacenamiento distribuido
+# CAPÍTULO 7: TECNOLOGÍAS DE ALMACENAMIENTO DISTRIBUIDO
 
-## HDFS (Hadoop Distributed File System)
+## 7.1. HDFS (Hadoop Distributed File System)
 
 **Arquitectura HDFS:**
 
@@ -78,7 +78,7 @@ Spark on EMR/Dataproc lee directamente de S3/GCS
 → No necesitas HDFS en cloud
 ```
 
-## Amazon S3 (Simple Storage Service)
+## 7.2. Amazon S3 (Simple Storage Service)
 
 **Características:**
 

@@ -1,6 +1,4 @@
-# Anonimización y Privacidad
-
-## Introducción
+# CAPÍTULO 12: GOBIERNO DE DATOS - ANONIMIZACIÓN Y PRIVACIDAD
 
 !!! abstract "Privacidad en la Era del Big Data"
     En el contexto del Big Data y análisis avanzado de datos, **proteger la privacidad individual mientras se preserva la utilidad analítica** es un desafío fundamental. La anonimización no es simplemente eliminar nombres, sino aplicar técnicas rigurosas que eviten la re-identificación.
@@ -19,7 +17,7 @@
 
 ---
 
-## Conceptos fundamentales
+## 12.1. Conceptos Fundamentales
 
 **Anonimización vs pseudonimización:**
 
@@ -90,7 +88,7 @@ risk_analysis = calculate_reidentification_risk(df, quasi_ids)
 
 ---
 
-## K-anonimidad
+## 12.2. K-Anonimidad
 
 **Definición:**
 
@@ -269,7 +267,7 @@ if __name__ == "__main__":
 
 ---
 
-## L-diversidad
+## 12.3. L-Diversidad
 
 **Definición:**
 
@@ -305,7 +303,7 @@ check_l_diversity(df_anon, ['age_range', 'zipcode'], 'disease', l=2)
 
 ---
 
-## Differential Privacy (privacidad diferencial)
+## 12.4. Differential Privacy (Privacidad Diferencial)
 
 **Fundamentos matemáticos:**
 
@@ -523,7 +521,7 @@ except ValueError as e:
 
 ---
 
-## Técnicas de anonimización complementarias
+## 12.5. Técnicas De Anonimización Complementarias
 
 **Data Masking (enmascaramiento):**
 
@@ -704,7 +702,7 @@ print(df_synthetic.describe())
 
 ---
 
-## Herramientas y frameworks
+## 12.6. Herramientas Y Frameworks
 
 **Google Differential Privacy Library:**
 
@@ -778,7 +776,7 @@ print(anonymized.text)
 
 ---
 
-## Caso práctico integrado: pipeline completo
+## 12.7. Caso Práctico Integrado: Pipeline Completo
 
 ```python
 import pandas as pd
@@ -1021,7 +1019,7 @@ Privacidad diferencial: ε=1.0
 
 ---
 
-## Best practices y recomendaciones
+## 12.8. Best Practices Y Recomendaciones
 
 !!! success "Recomendaciones Empresariales"
     
@@ -1061,7 +1059,7 @@ Privacidad diferencial: ε=1.0
 
 ---
 
-## Casos de uso reales
+## 12.9. Casos De Uso Reales
 
 **Caso 1: Netflix Prize (2006):**
 

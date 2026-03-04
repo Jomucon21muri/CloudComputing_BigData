@@ -1,6 +1,4 @@
-# Protección de Datos (RGPD)
-
-## Introducción
+# CAPÍTULO 12: GOBIERNO DE DATOS - PROTECCIÓN DE DATOS (RGPD)
 
 !!! abstract "Marco Legal Europeo"
     El **Reglamento General de Protección de Datos (RGPD)** o **General Data Protection Regulation (GDPR)** entró en vigor el **25 de mayo de 2018**, estableciendo el estándar más riguroso del mundo para la protección de datos personales.

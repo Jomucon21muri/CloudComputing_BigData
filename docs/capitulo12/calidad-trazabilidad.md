@@ -1,4 +1,4 @@
-# Calidad y Trazabilidad de Datos
+# CAPÍTULO 12: GOBIERNO DE DATOS - CALIDAD Y TRAZABILIDAD
 
 !!! abstract "Resumen del Capítulo"
     La **calidad de datos** es fundamental para tomar decisiones empresariales confiables. Este capítulo explora las dimensiones de calidad, métricas, herramientas y estrategias para implementar un programa completo de Data Quality y trazabilidad.

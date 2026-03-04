@@ -705,7 +705,7 @@ mindmap
 
 ## Próximos Pasos
 
-!!! success "¡Comienza Tu Viaje!"
+!!! success "¡Comienzamos!"
 
     1. **[ Capítulo 1: Economía y Gobierno del Dato](capitulo1/economia-gobierno-dato.md)**  
        Entiende por qué el dato es el nuevo petróleo
