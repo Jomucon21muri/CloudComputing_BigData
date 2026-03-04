@@ -2139,6 +2139,7 @@ Además, proveedores invierten en energías renovables:
 
 **Visión general de retos:**
 
+
 La construcción y operación de clouds enfrenta múltiples desafíos técnicos y organizacionales:
 
 ```
