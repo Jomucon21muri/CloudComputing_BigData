@@ -82,7 +82,7 @@ markdown_extensions:
   - toc:
       permalink: true
       permalink_title: Enlace a esta sección
-      toc_depth: 4
+      toc_depth: 2
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
