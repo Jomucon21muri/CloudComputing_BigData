@@ -1,6 +1,6 @@
-# CAPÍTULO 4: PROVEEDORES CLOUD (AWS, AZURE, GOOGLE CLOUD)
+# CAPÍTULO 4: Proveedores cloud (AWS, Azure, Google Cloud)
 
-## Introducción A Proveedores Cloud
+## Introducción a proveedores cloud
 
 Los tres principales proveedores de cloud público a nivel mundial son:
 

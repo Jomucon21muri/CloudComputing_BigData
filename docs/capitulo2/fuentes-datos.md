@@ -1,6 +1,6 @@
-# CAPÍTULO 2: FUENTES OFICIALES Y MÉDICAS DE DATOS
+# CAPÍTULO 2: Fuentes oficiales y médicas de datos
 
-## 2.1. Datos Abiertos En España: Datos.gob.es
+## 2.1. Datos abiertos en España: Datos.gob.es
 
 **URL**: https://datos.gob.es
 
@@ -64,7 +64,7 @@ df_casos = download_dataset(url_covid)
 - Gasto farmacéutico
 - Vacunación
 
-## 2.2. Instituto Nacional De Estadística (INE)
+## 2.2. Instituto Nacional de Estadística (INE)
 
 **URL**: https://www.ine.es
 
@@ -127,7 +127,7 @@ df_pivot = df_ine.pivot_table(
 )
 ```
 
-## 2.3. Ministerio De Sanidad
+## 2.3. Ministerio de Sanidad
 
 **URL**: https://www.sanidad.gob.es
 

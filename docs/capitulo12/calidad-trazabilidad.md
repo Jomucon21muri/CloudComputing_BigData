@@ -1,4 +1,4 @@
-# CAPÍTULO 12: GOBIERNO DE DATOS - CALIDAD Y TRAZABILIDAD
+# CAPÍTULO 12: Gobierno de datos - Calidad y trazabilidad
 
 !!! abstract "Resumen del Capítulo"
     La **calidad de datos** es fundamental para tomar decisiones empresariales confiables. Este capítulo explora las dimensiones de calidad, métricas, herramientas y estrategias para implementar un programa completo de Data Quality y trazabilidad.
@@ -801,7 +801,7 @@ alerts.process_validation_result(validation_result)
 
 ---
 
-## Resumen y Best Practices
+## Resumen y best practices
 
 !!! success "Mejores Prácticas de Data Quality"
     1. **Shift Left**: Validar datos lo antes posible en el pipeline
@@ -826,7 +826,7 @@ alerts.process_validation_result(validation_result)
 
 ---
 
-## Referencias y Recursos
+## Referencias y recursos
 
 - 📚 [Great Expectations Documentation](https://docs.greatexpectations.io/)
 - 📚 [Apache Atlas Documentation](https://atlas.apache.org/)

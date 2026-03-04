@@ -1,4 +1,4 @@
-# CAPÍTULO 9: METODOLOGÍAS AVANZADAS DE CIENCIA DE DATOS
+# CAPÍTULO 9: Metodologías avanzadas de ciencia de datos
 
 ## Introducción
 

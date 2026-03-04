@@ -1,6 +1,6 @@
-# CAPÍTULO 8 (Continuación): MINERÍA DE DATOS Y METODOLOGÍAS
+# CAPÍTULO 8 (continuación): Minería de datos y metodologías
 
-## 8.8. Minería de Datos (Data Mining)
+## 8.8. Minería de datos (Data Mining)
 
 **Definición:**
 

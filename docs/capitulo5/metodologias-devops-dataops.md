@@ -1,4 +1,4 @@
-# CAPÍTULO 5: METODOLOGÍAS DE DESARROLLO Y DESPLIEGUE EN LA NUBE
+# CAPÍTULO 5: Metodologías de desarrollo y despliegue en la nube
 
 ## 5.1. DevOps
 

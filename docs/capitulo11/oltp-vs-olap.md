@@ -1,4 +1,4 @@
-# CAPÍTULO 11: OLTP VS OLAP - SISTEMAS TRANSACCIONALES Y ANALÍTICOS
+# CAPÍTULO 11: OLTP vs OLAP - Sistemas transaccionales y analíticos
 
 !!! abstract "Dos Paradigmas Fundamentales"
     Los sistemas de información empresariales se dividen en dos categorías fundamentales: **OLTP** (sistemas transaccionales para operaciones) y **OLAP** (sistemas analíticos para toma de decisiones). Comprender sus diferencias es crítico para arquitecturas de datos efectivas.
@@ -280,7 +280,7 @@ COMMIT;
 
 ---
 
-## 11.3. OLTP Vs OLAP: Comparación Completa
+## 11.3. OLTP vs OLAP: comparación completa
 
 ```mermaid
 graph TD
@@ -329,7 +329,7 @@ graph TD
 
 ---
 
-## 11.4. Modelado Dimensional: Star Schema
+## 11.4. Modelado dimensional: Star Schema
 
 !!! success "Star Schema"
     El **Star Schema** es el modelo dimensional más común, con una tabla de **hechos** central rodeada de tablas de **dimensiones**.
@@ -838,7 +838,7 @@ Esta query respeta la historia:
 
 ---
 
-## 11.6. ETL: De OLTP a OLAP
+## 11.6. ETL: de OLTP a OLAP
 
 !!! info "ETL Process"
     **ETL** (Extract, Transform, Load) es el proceso de mover datos desde sistemas OLTP a Data Warehouse OLAP.

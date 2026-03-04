@@ -1,4 +1,4 @@
-# CAPÍTULO 12: GOBIERNO DE DATOS - ANONIMIZACIÓN Y PRIVACIDAD
+# CAPÍTULO 12: Gobierno de datos - Anonimización y privacidad
 
 !!! abstract "Privacidad en la Era del Big Data"
     En el contexto del Big Data y análisis avanzado de datos, **proteger la privacidad individual mientras se preserva la utilidad analítica** es un desafío fundamental. La anonimización no es simplemente eliminar nombres, sino aplicar técnicas rigurosas que eviten la re-identificación.
@@ -17,7 +17,7 @@
 
 ---
 
-## 12.1. Conceptos Fundamentales
+## 12.1. Conceptos fundamentales
 
 **Anonimización vs pseudonimización:**
 
@@ -88,7 +88,7 @@ risk_analysis = calculate_reidentification_risk(df, quasi_ids)
 
 ---
 
-## 12.2. K-Anonimidad
+## 12.2. K-anonimidad
 
 **Definición:**
 
@@ -267,7 +267,7 @@ if __name__ == "__main__":
 
 ---
 
-## 12.3. L-Diversidad
+## 12.3. L-diversidad
 
 **Definición:**
 
@@ -521,7 +521,7 @@ except ValueError as e:
 
 ---
 
-## 12.5. Técnicas De Anonimización Complementarias
+## 12.5. Técnicas de anonimización complementarias
 
 **Data Masking (enmascaramiento):**
 
@@ -702,7 +702,7 @@ print(df_synthetic.describe())
 
 ---
 
-## 12.6. Herramientas Y Frameworks
+## 12.6. Herramientas y frameworks
 
 **Google Differential Privacy Library:**
 

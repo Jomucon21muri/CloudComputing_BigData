@@ -1,4 +1,4 @@
-# CAPÍTULO 7: TECNOLOGÍAS DE ALMACENAMIENTO DISTRIBUIDO
+# CAPÍTULO 7: Tecnologías de almacenamiento distribuido
 
 ## 7.1. HDFS (Hadoop Distributed File System)
 

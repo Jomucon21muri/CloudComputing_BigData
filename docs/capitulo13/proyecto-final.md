@@ -1,4 +1,4 @@
-# Proyecto Final: Caso Práctico Integrador
+# Proyecto final: Caso práctico integrador
 
 !!! info "Estado del Capítulo"
     🚧 **En desarrollo** - Este capítulo está planificado para futuras versiones.
@@ -7,7 +7,7 @@
 
 Este proyecto final integra todos los conocimientos adquiridos en los bloques anteriores en un caso práctico completo de principio a fin.
 
-## Objetivos del Proyecto
+## Objetivos del proyecto
 
 Diseñar e implementar una **plataforma completa de Data Analytics** que incluya:
 
@@ -320,7 +320,7 @@ model.save('s3://my-bucket/models/churn_model/')
 
 ---
 
-## Criterios de Evaluación
+## Criterios de evaluación
 
 | Criterio | Peso | Descripción |
 |----------|------|-------------|
@@ -343,7 +343,7 @@ model.save('s3://my-bucket/models/churn_model/')
     6. **Aplica best practices** de seguridad
     7. **Itera basado en feedback**
 
-## Próximos Pasos
+## Próximos pasos
 
 Este proyecto será desarrollado en futuras versiones con:
 

@@ -137,27 +137,25 @@ extra:
 nav:
   - Inicio: index.md
   - Bloque 1 - Fundamentos del Dato:
-      - Economía y Gobierno del Dato: capitulo1/economia-gobierno-dato.md
-      - Fuentes Oficiales y Médicas de Datos: capitulo2/fuentes-datos.md
+      - Capítulo 1. Economía y gobierno del dato: capitulo1/economia-gobierno-dato.md
+      - Capítulo 2. Fuentes oficiales y médicas de datos: capitulo2/fuentes-datos.md
   - Bloque 2 - Cloud Computing:
-      - Fundamentos de Cloud Computing: capitulo3/fundamentos-cloud.md
-      - Proveedores Cloud (AWS, Azure, GCP): capitulo4/proveedores-cloud.md
-      - Metodologías DevOps y DataOps: capitulo5/metodologias-devops-dataops.md
-  - Bloque 3 - Data Lakes y Almacenamiento:
-      - Arquitectura de Data Lake: capitulo6/arquitectura-data-lake.md
-      - Almacenamiento Distribuido: capitulo7/almacenamiento-distribuido.md
-  - Bloque 4 - Big Data y Minería de Datos:
-      - Fundamentos de Big Data: capitulo8/fundamentos-big-data.md
-      - Minería de Datos y CRISP-DM: capitulo8/mineria-datos-metodologias.md
-  - Bloque 5 - OLTP vs OLAP:
-      - Sistemas Transaccionales y Analíticos: capitulo11/oltp-vs-olap.md
-  - Bloque 6 - Infraestructura Big Data:
-      - Hadoop, Spark, Kafka y Airflow: capitulo10/infraestructura-big-data.md
-  - Bloque 7 - Metodologías Avanzadas de Data Science:
-      - KDD, ASUM-DM, TDSP y Más: capitulo9/metodologias-avanzadas.md
-  - Bloque 8 - Gobierno de Datos:
-      - Calidad y Trazabilidad: capitulo12/calidad-trazabilidad.md
-      - Protección de Datos (RGPD): capitulo12/proteccion-datos.md
-      - Anonimización y Privacidad: capitulo12/anonimizacion.md
+      - Capítulo 3. Fundamentos de Cloud Computing: capitulo3/fundamentos-cloud.md
+      - Capítulo 4. Proveedores cloud (AWS, Azure, GCP): capitulo4/proveedores-cloud.md
+      - Capítulo 5. Metodologías DevOps y DataOps: capitulo5/metodologias-devops-dataops.md
+  - Bloque 3 - Almacenamiento y Bases de Datos:
+      - Capítulo 6. Arquitectura de Data Lake: capitulo6/arquitectura-data-lake.md
+      - Capítulo 7. Almacenamiento distribuido: capitulo7/almacenamiento-distribuido.md
+      - Capítulo 11. OLTP vs OLAP: capitulo11/oltp-vs-olap.md
+  - Bloque 4 - Infraestructura Big Data:
+      - Capítulo 10. Hadoop, Spark, Kafka y Airflow: capitulo10/infraestructura-big-data.md
+  - Bloque 5 - Análisis y Minería de Datos:
+      - Capítulo 8. Fundamentos de Big Data: capitulo8/fundamentos-big-data.md
+      - Capítulo 8. Minería de datos y CRISP-DM: capitulo8/mineria-datos-metodologias.md
+      - Capítulo 9. Metodologías avanzadas (KDD, ASUM-DM, TDSP): capitulo9/metodologias-avanzadas.md
+  - Bloque 6 - Gobierno de Datos:
+      - Capítulo 12. Calidad y trazabilidad: capitulo12/calidad-trazabilidad.md
+      - Capítulo 12. Protección de datos (RGPD): capitulo12/proteccion-datos.md
+      - Capítulo 12. Anonimización y privacidad: capitulo12/anonimizacion.md
   - Proyecto Final:
-      - Caso Práctico Integrador: capitulo13/proyecto-final.md
+      - Capítulo 13. Caso práctico integrador: capitulo13/proyecto-final.md

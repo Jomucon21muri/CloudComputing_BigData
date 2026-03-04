@@ -1,6 +1,6 @@
-# CAPÍTULO 3: FUNDAMENTOS DE CLOUD COMPUTING
+# CAPÍTULO 3: Fundamentos de Cloud Computing
 
-## 3.1. Definición Y Características Esenciales
+## 3.1. Definición y características esenciales
 
 **¿Qué es Cloud Computing?:**
 
@@ -422,7 +422,7 @@ for result in response['ResultsByTime']:
    - Asignación de costes por proyecto/departamento
    - Análisis de ROI
 
-## 3.2. Modelos De Servicio (IaaS, PaaS, SaaS)
+## 3.2. Modelos de servicio (IaaS, PaaS, SaaS)
 
 **Visión General de los Modelos:**
 
@@ -1608,7 +1608,7 @@ if __name__ == '__main__':
 - Compartir con equipo
 - Sin infraestructura propia
 
-## 3.3. Modelos De Despliegue
+## 3.3. Modelos de despliegue
 
 **Nube Pública:**
 
@@ -1696,7 +1696,7 @@ Nube Pública (AWS/Azure):
 
 ---
 
-## 3.4. Beneficios Y Desventajas De Cloud Computing
+## 3.4. Beneficios y desventajas de Cloud Computing
 
 **Beneficios principales:**
 
@@ -2135,7 +2135,7 @@ Además, proveedores invierten en energías renovables:
 - ❌ Transferencias masivas continuas de datos
 
 
-## 3.5. Retos Y Desafíos En Cloud Computing
+## 3.5. Retos y desafíos en Cloud Computing
 
 **Visión general de retos:**
 

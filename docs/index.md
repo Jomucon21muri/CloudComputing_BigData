@@ -646,7 +646,7 @@ graph TD
 
 ---
 
-## Mapa del Curso
+## Mapa del curso
 
 ```mermaid
 mindmap
@@ -657,32 +657,30 @@ mindmap
     [Bloque 2<br/>Cloud]
       (IaaS/PaaS/SaaS)
       (AWS/Azure/GCP)
-    [Bloque 3<br/>Data Lake]
-      (RAW/TRUSTED/REFINED)
+      (DevOps/DataOps)
+    [Bloque 3<br/>Almacenamiento]
+      (Data Lake)
       (HDFS/S3)
-    [Bloque 4<br/>OLAP]
-      (Star Schema)
-      (Drill-down)
-    [Bloque 5<br/>Big Data]
+      (OLTP vs OLAP)
+    [Bloque 4<br/>Infraestructura]
       (Hadoop/Spark)
-      (Batch/Streaming)
-    [Bloque 6<br/>Minería]
-      (Clasificación)
-      (Clustering)
-    [Bloque 7<br/>KDD]
+      (Kafka/Airflow)
+    [Bloque 5<br/>Análisis]
+      (Big Data)
       (CRISP-DM)
-      (ASUM-DM/TDSP)
-    [Bloque 8<br/>Gobierno]
+      (KDD/ASUM-DM)
+    [Bloque 6<br/>Gobierno]
+      (Calidad)
       (RGPD)
       (Anonimización)
-    [Bloque 9<br/>Proyecto]
+    [Proyecto<br/>Final]
       (Integración)
       (Deployment)
 ```
 
 ---
 
-## Soporte y Recursos
+## Soporte y recursos
 
 !!! question "¿Necesitas Ayuda?"
     
@@ -703,7 +701,7 @@ mindmap
 
 ---
 
-## Próximos Pasos
+## Próximos pasos
 
 !!! success "¡Comienzamos!"
 

@@ -1,4 +1,4 @@
-# CAPÍTULO 10: INFRAESTRUCTURA BIG DATA
+# CAPÍTULO 10: Infraestructura Big Data
 
 !!! abstract "Ecosistema Completo"
     La infraestructura Big Data comprende un conjunto de tecnologías distribuidas diseñadas para almacenar, procesar y analizar volúmenes masivos de datos de manera eficiente, escalable y tolerante a fallos.

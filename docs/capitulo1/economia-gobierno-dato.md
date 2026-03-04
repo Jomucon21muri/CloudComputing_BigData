@@ -1,6 +1,6 @@
-# CAPÍTULO 1: ECONOMÍA Y GOBIERNO DEL DATO
+# CAPÍTULO 1: Economía y gobierno del dato
 
-## 1.1. El Dato Como Activo Estratégico
+## 1.1. El dato como activo estratégico
 
 **Definición**: Los datos son el nuevo petróleo del siglo XXI. Representan valor económico, ventaja competitiva y base para la toma de decisiones.
 
@@ -71,7 +71,7 @@ Años 2010: Dato como activo
 * Investigación científica
 * Transparencia gubernamental
 
-## 1.2. Calidad Del Dato
+## 1.2. Calidad del dato
 
 **Framework DAMA (Data Management Association):**
 

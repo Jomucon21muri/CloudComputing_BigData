@@ -1,4 +1,4 @@
-# CAPÍTULO 12: GOBIERNO DE DATOS - PROTECCIÓN DE DATOS (RGPD)
+# CAPÍTULO 12: Gobierno de datos - Protección de datos (RGPD)
 
 !!! abstract "Marco Legal Europeo"
     El **Reglamento General de Protección de Datos (RGPD)** o **General Data Protection Regulation (GDPR)** entró en vigor el **25 de mayo de 2018**, estableciendo el estándar más riguroso del mundo para la protección de datos personales.
@@ -20,7 +20,7 @@ timeline
 
 ---
 
-## 12.1. Conceptos Fundamentales del RGPD
+## 12.1. Conceptos fundamentales del RGPD
 
 **Definiciones clave:**
 
@@ -103,7 +103,7 @@ print(TiposDatoPersonal.clasificar_dato('historial_medico', '...'))
 
 ---
 
-## 12.2. Principios Fundamentales (Art. 5)
+## 12.2. Principios fundamentales (Art. 5)
 
 **Los 7 principios del RGPD:**
 
@@ -586,7 +586,7 @@ print("\n" + registro.generar_reporte_cumplimiento())
 
 ---
 
-## 12.3. Derechos de los Interesados
+## 12.3. Derechos de los interesados
 
 **Los 8 derechos RGPD:**
 
@@ -1191,7 +1191,7 @@ dpia.imprimir_reporte()
 
 ---
 
-## 12.6. Sanciones y Enforcement
+## 12.6. Sanciones y enforcement
 
 **Niveles de multas:**
 
@@ -1222,7 +1222,7 @@ dpia.imprimir_reporte()
 
 ---
 
-## 12.7. Transferencias Internacionales (Capítulo V)
+## 12.7. Transferencias internacionales (Capítulo V)
 
 **Reglas para transfers fuera de la UE:**
 
@@ -1306,7 +1306,7 @@ resultado_china = TransferenciasInternacionales.validar_transferencia('China')
 
 ---
 
-## 12.8. Herramientas de Cumplimiento RGPD
+## 12.8. Herramientas de cumplimiento RGPD
 
 **Software de gestión de consentimientos (CMP):**
 
@@ -1409,7 +1409,7 @@ for tipo, valores in pii_detectada.items():
 
 ---
 
-## 12.9. Best Practices y Recomendaciones
+## 12.9. Best practices y recomendaciones
 
 !!! success "Checklist de Cumplimiento RGPD"
     
@@ -1441,7 +1441,7 @@ for tipo, valores in pii_detectada.items():
 
 ---
 
-## Referencias y Recursos
+## Referencias y recursos
 
 **Textos legales:**
 - [RGPD - Texto Oficial (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)

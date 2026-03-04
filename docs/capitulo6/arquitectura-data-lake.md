@@ -1,6 +1,6 @@
-# CAPÍTULO 6: ARQUITECTURA DE DATA LAKE
+# CAPÍTULO 6: Arquitectura de Data Lake
 
-## 6.1. ¿Qué Es Un Data Lake?
+## 6.1. ¿Qué es un Data Lake?
 
 **Data Lake:** Repositorio centralizado que permite almacenar todos los datos estructurados, semiestructurados y no estructurados a cualquier escala, en su formato nativo, con esquema-on-read.
 
@@ -51,7 +51,7 @@ Datos Fuente → Ingestar directamente en Data Lake → Aplicar esquema al leer
 **5. Integración con herramientas Big Data:**
 - Compatible con Spark, Hadoop, Presto, etc.
 
-## 6.2. Arquitectura De Tres Capas (Zonas)
+## 6.2. Arquitectura de tres capas (zonas)
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -313,7 +313,7 @@ df_refined.write.mode("overwrite") \
 print("Datos escritos en zona REFINED y exportados a DW")
 ```
 
-## 6.3. Particionado De Datos
+## 6.3. Particionado de datos
 
 **¿Por qué particionar?**
 
