@@ -146,13 +146,13 @@ nav:
   - Bloque 3 - Almacenamiento y Bases de Datos:
       - Capítulo 6. Arquitectura de Data Lake: capitulo6/arquitectura-data-lake.md
       - Capítulo 7. Almacenamiento distribuido: capitulo7/almacenamiento-distribuido.md
-      - Capítulo 11. OLTP vs OLAP: capitulo11/oltp-vs-olap.md
+      - Capítulo 8. OLTP vs OLAP: capitulo08/oltp-vs-olap.md
   - Bloque 4 - Infraestructura Big Data:
-      - Capítulo 10. Hadoop, Spark, Kafka y Airflow: capitulo10/infraestructura-big-data.md
+      - Capítulo 9. Hadoop, Spark, Kafka y Airflow: capitulo09/infraestructura-big-data.md
   - Bloque 5 - Análisis y Minería de Datos:
-      - Capítulo 8. Fundamentos de Big Data: capitulo8/fundamentos-big-data.md
-      - Capítulo 8. Minería de datos y CRISP-DM: capitulo8/mineria-datos-metodologias.md
-      - Capítulo 9. Metodologías avanzadas (KDD, ASUM-DM, TDSP): capitulo9/metodologias-avanzadas.md
+      - Capítulo 10. Fundamentos de Big Data: capitulo10/fundamentos-big-data.md
+      - Capítulo 10. Minería de datos y CRISP-DM: capitulo10/mineria-datos-metodologias.md
+      - Capítulo 11. Metodologías avanzadas (KDD, ASUM-DM, TDSP): capitulo11/metodologias-avanzadas.md
   - Bloque 6 - Gobierno de Datos:
       - Capítulo 12. Calidad y trazabilidad: capitulo12/calidad-trazabilidad.md
       - Capítulo 12. Protección de datos (RGPD): capitulo12/proteccion-datos.md

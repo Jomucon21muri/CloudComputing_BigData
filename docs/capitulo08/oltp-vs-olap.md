@@ -1,11 +1,11 @@
-# CAPÍTULO 11: OLTP vs OLAP - Sistemas transaccionales y analíticos
+# CAPÍTULO 8: OLTP vs OLAP - Sistemas transaccionales y analíticos
 
 !!! abstract "Dos Paradigmas Fundamentales"
     Los sistemas de información empresariales se dividen en dos categorías fundamentales: **OLTP** (sistemas transaccionales para operaciones) y **OLAP** (sistemas analíticos para toma de decisiones). Comprender sus diferencias es crítico para arquitecturas de datos efectivas.
 
 ---
 
-## 11.1. OLTP (Online Transaction Processing)
+## 8.1. OLTP (Online Transaction Processing)
 
 !!! info "Definición"
     **OLTP** son sistemas optimizados para procesar grandes volúmenes de **transacciones** cortas y frecuentes, garantizando **ACID** (Atomicidad, Consistencia, Aislamiento, Durabilidad).
@@ -248,7 +248,7 @@ COMMIT;
 
 ---
 
-## 11.2. OLAP (Online Analytical Processing)
+## 8.2. OLAP (Online Analytical Processing)
 
 !!! info "Definición"
     **OLAP** son sistemas optimizados para **análisis** y **consultas complejas** sobre grandes volúmenes de datos históricos, con énfasis en agregaciones y multidimensionalidad.
@@ -280,7 +280,7 @@ COMMIT;
 
 ---
 
-## 11.3. OLTP vs OLAP: comparación completa
+## 8.3. OLTP vs OLAP: comparación completa
 
 ```mermaid
 graph TD
@@ -329,7 +329,7 @@ graph TD
 
 ---
 
-## 11.4. Modelado dimensional: Star Schema
+## 8.4. Modelado dimensional: Star Schema
 
 !!! success "Star Schema"
     El **Star Schema** es el modelo dimensional más común, con una tabla de **hechos** central rodeada de tablas de **dimensiones**.
@@ -691,7 +691,7 @@ ORDER BY t.year, t.month_num, t.day_of_month;
 
 ---
 
-## 11.5. Slowly Changing Dimensions (SCD)
+## 8.5. Slowly Changing Dimensions (SCD)
 
 !!! tip "SCD: Manejo de Cambios en Dimensiones"
     Las dimensiones cambian con el tiempo (ej: cliente se muda, producto cambia de precio). SCD define cómo manejar estos cambios.
@@ -838,7 +838,7 @@ Esta query respeta la historia:
 
 ---
 
-## 11.6. ETL: de OLTP a OLAP
+## 8.6. ETL: de OLTP a OLAP
 
 !!! info "ETL Process"
     **ETL** (Extract, Transform, Load) es el proceso de mover datos desde sistemas OLTP a Data Warehouse OLAP.
@@ -1090,7 +1090,7 @@ if __name__ == '__main__':
 
 ---
 
-## 11.7. Tecnologías OLTP vs OLAP
+## 8.7. Tecnologías OLTP vs OLAP
 
 **Bases de datos OLTP:**
 
@@ -1153,4 +1153,4 @@ if __name__ == '__main__':
 
 ---
 
-*Fin del Capítulo 11: OLTP vs OLAP*
+*Fin del Capítulo 8: OLTP vs OLAP*

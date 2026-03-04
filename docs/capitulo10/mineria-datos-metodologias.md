@@ -1,6 +1,6 @@
-# CAPÍTULO 8 (continuación): Minería de datos y metodologías
+# CAPÍTULO 10 (continuación): Minería de datos y metodologías
 
-## 8.8. Minería de datos (Data Mining)
+## 10.8. Minería de datos (Data Mining)
 
 **Definición:**
 
@@ -423,7 +423,7 @@ print(f"\n🚨 Alerta: {resultado}")
 
 ---
 
-## 8.9. Preprocesamiento de Datos
+## 10.9. Preprocesamiento de Datos
 
 !!! warning "Regla 80-20"
     El **80% del tiempo** en proyectos de minería de datos se dedica a **preprocesamiento**. Solo el **20%** es modelado.
@@ -670,7 +670,7 @@ print(f"Dataset reducido: {len(df_sample):,} filas")
 
 ---
 
-## 8.10. Metodología CRISP-DM
+## 10.10. Metodología CRISP-DM
 
 !!! abstract "CRISP-DM: Cross Industry Standard Process for Data Mining"
     **CRISP-DM** es la metodología más utilizada en proyectos de minería de datos y ciencia de datos.
@@ -2510,7 +2510,7 @@ print(timeline[['fase', 'inicio', 'fin']])
 
 ---
 
-## 8.11. Resumen CRISP-DM
+## 10.11. Resumen CRISP-DM
 
 !!! tip "Ventajas de CRISP-DM"
     - **Flexible:** Permite iteraciones entre fases

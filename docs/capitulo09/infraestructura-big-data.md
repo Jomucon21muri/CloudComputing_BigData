@@ -1,11 +1,11 @@
-# CAPÍTULO 10: Infraestructura Big Data
+# CAPÍTULO 9: Infraestructura Big Data
 
 !!! abstract "Ecosistema Completo"
     La infraestructura Big Data comprende un conjunto de tecnologías distribuidas diseñadas para almacenar, procesar y analizar volúmenes masivos de datos de manera eficiente, escalable y tolerante a fallos.
 
 ---
 
-## 10.1. Ecosistema Hadoop
+## 9.1. Ecosistema Hadoop
 
 !!! info "Apache Hadoop"
     **Hadoop** es el framework de código abierto más establecido para procesamiento distribuido de grandes conjuntos de datos usando el modelo **MapReduce** y almacenamiento HDFS.
@@ -415,7 +415,7 @@ LIMIT 10;
 
 ---
 
-## 10.2. Apache Spark
+## 9.2. Apache Spark
 
 !!! success "Spark: Procesamiento In-Memory"
     **Apache Spark** es el framework de procesamiento distribuido de nueva generación, hasta **100x más rápido** que MapReduce gracias al procesamiento en memoria (RAM).
@@ -746,7 +746,7 @@ model.write().overwrite().save("hdfs:///models/churn_predictor")
 
 ---
 
-## 10.3. Procesamiento: Batch vs Streaming
+## 9.3. Procesamiento: Batch vs Streaming
 
 ### Comparación
 
@@ -910,7 +910,7 @@ query_console.awaitTermination()
 
 ---
 
-## 10.4. Apache Kafka
+## 9.4. Apache Kafka
 
 !!! info "Kafka: Plataforma de Streaming Distribuida"
     **Apache Kafka** es una plataforma de streaming distribuida para publicar, suscribirse, almacenar y procesar streams de eventos en tiempo real.
@@ -1073,7 +1073,7 @@ finally:
 
 ---
 
-## 10.5. Apache Airflow: Orquestación de Workflows
+## 9.5. Apache Airflow: Orquestación de Workflows
 
 !!! success "Airflow: Platform to Programmatically Author, Schedule and Monitor Workflows"
     **Apache Airflow** permite definir workflows complejos como código (DAGs), con scheduling, monitoreo y manejo de dependencias.
@@ -1270,7 +1270,7 @@ graph LR
 
 ---
 
-## 10.6. Comparación Final de Tecnologías
+## 9.6. Comparación Final de Tecnologías
 
 ### Hadoop vs Spark
 
@@ -1335,4 +1335,4 @@ graph LR
 
 ---
 
-*Fin del Capítulo 10: Infraestructura Big Data*
+*Fin del Capítulo 9: Infraestructura Big Data*

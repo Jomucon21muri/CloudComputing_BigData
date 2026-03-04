@@ -1,4 +1,4 @@
-# CAPÍTULO 9: Metodologías avanzadas de ciencia de datos
+# CAPÍTULO 11: Metodologías avanzadas de ciencia de datos
 
 ## Introducción
 
@@ -7,7 +7,7 @@
 
 ---
 
-## 9.1. KDD (Knowledge Discovery in Databases)
+## 11.1. KDD (Knowledge Discovery in Databases)
 
 !!! info "Origen Histórico"
     **KDD** es uno de los procesos **más antiguos** de descubrimiento de conocimiento en bases de datos, previo a CRISP-DM. Desarrollado en la década de 1990, establece los fundamentos conceptuales de la minería de datos moderna.
@@ -431,7 +431,7 @@ print("   [ ] ROI proyectado: 250% en 12 meses")
 
 ---
 
-## 9.2. ASUM-DM (IBM Analytics Solutions Unified Method)
+## 11.2. ASUM-DM (IBM Analytics Solutions Unified Method)
 
 !!! info "Metodología Corporativa de IBM"
     **ASUM-DM** es la evolución de CRISP-DM desarrollada por **IBM** para proyectos de analytics empresariales, integrando mejores prácticas de IBM y enfoque en soluciones end-to-end.
@@ -793,7 +793,7 @@ graph TD
 
 ---
 
-## 9.3. TDSP (Team Data Science Process - Microsoft)
+## 11.3. TDSP (Team Data Science Process - Microsoft)
 
 !!! info "Metodología de Microsoft"
     **TDSP** es la metodología ágil e iterativa de **Microsoft** para proyectos de data science en equipo, enfocada en colaboración, estándares y mejores prácticas corporativas.
@@ -1228,7 +1228,7 @@ resources:
 
 ---
 
-## 9.4. Otras Metodologías
+## 11.4. Otras Metodologías
 
 **Domino Data Science Lifecycle:**
 
@@ -1327,7 +1327,7 @@ graph TD
 
 ---
 
-## 9.5. Comparación de Todas las Metodologías
+## 11.5. Comparación de Todas las Metodologías
 
 | Metodología | Origen | Fases | Énfasis Principal | Mejor Para |
 |-------------|--------|-------|-------------------|------------|
@@ -1342,7 +1342,7 @@ graph TD
 
 ---
 
-## 9.6. ¿Cuál Metodología Elegir?
+## 11.6. ¿Cuál Metodología Elegir?
 
 !!! question "Guía de Selección"
 
@@ -1377,7 +1377,7 @@ graph TD
 
 ---
 
-## 9.7. Resumen y Mejores Prácticas
+## 11.7. Resumen y Mejores Prácticas
 
 !!! success "Mejores Prácticas Universales (Todas las Metodologías)"
     
@@ -1432,4 +1432,4 @@ graph TD
 
 ---
 
-*Fin del Capítulo 9: Metodologías Avanzadas de Ciencia de Datos*
+*Fin del Capítulo 11: Metodologías Avanzadas de Ciencia de Datos*
