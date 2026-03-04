@@ -227,7 +227,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
 
 <div class="grid cards" markdown>
 
-- :material-database: **[Capítulo 1: Economía y Gobierno del Dato](capitulo1/economia-gobierno-dato.md)**
+- :material-database: **[Capítulo 1: Economía y Gobierno del Dato](capitulo01/economia-gobierno-dato.md)**
 
     ---
     
@@ -238,7 +238,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
     
     **🔑 Concepto clave**: *El dato es el nuevo petróleo, pero requiere refinamiento*
 
-- :material-file-chart: **[Capítulo 2: Fuentes Oficiales y Médicas](capitulo2/fuentes-datos.md)**
+- :material-file-chart: **[Capítulo 2: Fuentes Oficiales y Médicas](capitulo02/fuentes-datos.md)**
 
     ---
     
@@ -260,7 +260,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
 
 <div class="grid cards" markdown>
 
-- :material-cloud: **[Capítulo 3: Fundamentos Cloud Computing](capitulo3/fundamentos-cloud.md)**
+- :material-cloud: **[Capítulo 3: Fundamentos Cloud Computing](capitulo03/fundamentos-cloud.md)**
 
     ---
     
@@ -272,7 +272,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
     
     **🔑 Concepto clave**: *Pagar por lo que usas, escalar según demanda*
 
-- :material-server: **[Capítulo 4: Proveedores Cloud](capitulo4/proveedores-cloud.md)**
+- :material-server: **[Capítulo 4: Proveedores Cloud](capitulo04/proveedores-cloud.md)**
 
     ---
     
@@ -283,6 +283,18 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
     - Casos de uso y mejores prácticas
     
     **🔑 Concepto clave**: *Cada proveedor tiene fortalezas específicas*
+
+- :material-sync: **[Capítulo 5: Metodologías DevOps y DataOps](capitulo05/metodologias-devops-dataops.md)**
+
+    ---
+    
+    - **DevOps**: Integración continua (CI), despliegue continuo (CD), infraestructura como código
+    - **DataOps**: Orquestación de pipelines de datos, observabilidad, calidad
+    - **Herramientas**: Git, Jenkins, GitLab CI/CD, Terraform, Ansible
+    - **Contenedores**: Docker, Kubernetes, servicios gestionados (ECS, AKS, GKE)
+    - Automatización y monitorización de pipelines
+    
+    **🔑 Concepto clave**: *Automatizar todo el ciclo de vida de datos y aplicaciones*
 
 </div>
 
@@ -295,7 +307,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
 
 <div class="grid cards" markdown>
 
-- :material-lake: **[Capítulo 6: Arquitectura Data Lake](capitulo6/arquitectura-data-lake.md)**
+-  **[Capítulo 6: Arquitectura Data Lake](capitulo06/arquitectura-data-lake.md)**
 
     ---
     
@@ -309,7 +321,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
     
     **📌 Práctica**: Crear Data Lake con datos del INE y Ministerio de Sanidad
 
-- :material-harddisk: **[Capítulo 7: Almacenamiento Distribuido](capitulo7/almacenamiento-distribuido.md)**
+- :material-harddisk: **[Capítulo 7: Almacenamiento Distribuido](capitulo07/almacenamiento-distribuido.md)**
 
     ---
     
@@ -332,7 +344,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
 
 <div class="grid cards" markdown>
 
-- :material-database-sync: **[Capítulo 11: OLTP vs OLAP](capitulo11/oltp-vs-olap.md)**
+- :material-database-sync: **[Capítulo 8: OLTP vs OLAP](capitulo08/oltp-vs-olap.md)**
 
     ---
     
@@ -359,7 +371,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
 
 <div class="grid cards" markdown>
 
-- :material-elephant: **[Capítulo 10: Infraestructura Big Data](capitulo10/infraestructura-big-data.md)**
+- :material-elephant: **[Capítulo 9: Infraestructura Big Data](capitulo09/infraestructura-big-data.md)**
 
     ---
     
@@ -386,7 +398,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
 
 <div class="grid cards" markdown>
 
-- :material-pickaxe: **[Capítulo 8: Fundamentos Big Data y Data Mining](capitulo8/fundamentos-big-data.md)**
+- :material-pickaxe: **[Capítulo 10: Fundamentos Big Data y Data Mining](capitulo10/fundamentos-big-data.md)**
 
     ---
     
@@ -409,7 +421,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
     
     **📌 Aplicación**: Predicción de incidencia de enfermedades, segmentación poblacional, detección de patrones territoriales
 
-- :material-chart-line: **[Capítulo 8.2: CRISP-DM](capitulo8/mineria-datos-metodologias.md)**
+- :material-chart-line: **[Capítulo 10.2: Preprocesamiento y CRISP-DM](capitulo10/mineria-datos-metodologias.md)**
 
     ---
     
@@ -436,7 +448,7 @@ El curso está diseñado con una **progresión lógica** que reproduce el flujo 
 
 <div class="grid cards" markdown>
 
-- :material-brain: **[Capítulo 9: KDD y Metodologías Avanzadas](capitulo9/metodologias-avanzadas.md)**
+- :material-brain: **[Capítulo 11: KDD y Metodologías Avanzadas](capitulo11/metodologias-avanzadas.md)**
 
     ---
     
@@ -641,8 +653,8 @@ graph TD
 
     Enlaces internos entre capítulos para profundizar:
     
-    - Ver [Data Lake](capitulo6/arquitectura-data-lake.md) para más detalles
-    - Conexión con [OLAP](capitulo11/oltp-vs-olap.md)
+    - Ver [Data Lake](capitulo06/arquitectura-data-lake.md) para más detalles
+    - Conexión con [OLAP](capitulo08/oltp-vs-olap.md)
 
 ---
 
@@ -705,13 +717,13 @@ mindmap
 
 !!! success "¡Comienzamos!"
 
-    1. **[ Capítulo 1: Economía y Gobierno del Dato](capitulo1/economia-gobierno-dato.md)**  
+    1. **[ Capítulo 1: Economía y Gobierno del Dato](capitulo01/economia-gobierno-dato.md)**  
        Entiende por qué el dato es el nuevo petróleo
     
-    2. **[ Capítulo 2: Fuentes Oficiales](capitulo2/fuentes-datos.md)**  
+    2. **[ Capítulo 2: Fuentes Oficiales](capitulo02/fuentes-datos.md)**  
        Explora datos reales del INE y Ministerio de Sanidad
     
-    3. **[ Capítulo 3: Cloud Computing](capitulo3/fundamentos-cloud.md)**  
+    3. **[ Capítulo 3: Cloud Computing](capitulo03/fundamentos-cloud.md)**  
        Domina IaaS, PaaS, SaaS y arquitecturas cloud
 ---
 

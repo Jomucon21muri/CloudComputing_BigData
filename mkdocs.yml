@@ -137,21 +137,21 @@ extra:
 nav:
   - Inicio: index.md
   - Bloque 1 - Fundamentos del Dato:
-      - Capítulo 1. Economía y gobierno del dato: capitulo1/economia-gobierno-dato.md
-      - Capítulo 2. Fuentes oficiales y médicas de datos: capitulo2/fuentes-datos.md
+      - Capítulo 1. Economía y gobierno del dato: capitulo01/economia-gobierno-dato.md
+      - Capítulo 2. Fuentes oficiales y médicas de datos: capitulo02/fuentes-datos.md
   - Bloque 2 - Cloud Computing:
-      - Capítulo 3. Fundamentos de Cloud Computing: capitulo3/fundamentos-cloud.md
-      - Capítulo 4. Proveedores cloud (AWS, Azure, GCP): capitulo4/proveedores-cloud.md
-      - Capítulo 5. Metodologías DevOps y DataOps: capitulo5/metodologias-devops-dataops.md
+      - Capítulo 3. Fundamentos de Cloud Computing: capitulo03/fundamentos-cloud.md
+      - Capítulo 4. Proveedores cloud (AWS, Azure, GCP): capitulo04/proveedores-cloud.md
+      - Capítulo 5. Metodologías DevOps y DataOps: capitulo05/metodologias-devops-dataops.md
   - Bloque 3 - Almacenamiento y Bases de Datos:
-      - Capítulo 6. Arquitectura de Data Lake: capitulo6/arquitectura-data-lake.md
-      - Capítulo 7. Almacenamiento distribuido: capitulo7/almacenamiento-distribuido.md
+      - Capítulo 6. Arquitectura de Data Lake: capitulo06/arquitectura-data-lake.md
+      - Capítulo 7. Almacenamiento distribuido: capitulo07/almacenamiento-distribuido.md
       - Capítulo 8. OLTP vs OLAP: capitulo08/oltp-vs-olap.md
   - Bloque 4 - Infraestructura Big Data:
       - Capítulo 9. Hadoop, Spark, Kafka y Airflow: capitulo09/infraestructura-big-data.md
   - Bloque 5 - Análisis y Minería de Datos:
-      - Capítulo 10. Fundamentos de Big Data: capitulo10/fundamentos-big-data.md
-      - Capítulo 10. Minería de datos y CRISP-DM: capitulo10/mineria-datos-metodologias.md
+      - Capítulo 10. Fundamentos de Big Data y Data Mining: capitulo10/fundamentos-big-data.md
+      - Capítulo 10. Preprocesamiento y CRISP-DM: capitulo10/mineria-datos-metodologias.md
       - Capítulo 11. Metodologías avanzadas (KDD, ASUM-DM, TDSP): capitulo11/metodologias-avanzadas.md
   - Bloque 6 - Gobierno de Datos:
       - Capítulo 12. Calidad y trazabilidad: capitulo12/calidad-trazabilidad.md
