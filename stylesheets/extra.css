@@ -1,0 +1,598 @@
+/* ============================================
+   Estilos Personalizados para Guía de Cloud Computing & Big Data
+   ============================================ */
+
+/* Variables raíz */
+:root {
+  --md-primary-fg-color: #FF6600;
+  --md-primary-fg-color--light: #FF8533;
+  --md-primary-fg-color--dark: #CC5200;
+  --md-accent-fg-color: #FF6600;
+}
+
+/* Estilos personalizados para admoniciones */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: #2196f3;
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #00bcd4;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: #ff9800;
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: #f44336;
+}
+
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: #9c27b0;
+}
+
+/* Mejoras en bloques de código */
+.md-typeset code {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   AJUSTE DE BLOQUES DE CÓDIGO
+   ============================================ */
+
+/* Limitar bloques de código al ancho del contenedor */
+.md-typeset pre {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1rem 0;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+/* Contenedor de highlight con control de overflow */
+.md-typeset .highlight {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+/* Prevenir que el contenedor de código exceda el ancho */
+.md-typeset .highlighttable {
+  max-width: 100%;
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+
+/* Código inline que no rompa el layout */
+.md-typeset code {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Asegurar que pre code no desborde */
+.md-typeset pre code {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+/* Contenedor interno de código */
+.md-typeset .highlight pre {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.md-typeset .highlight pre code {
+  padding: 1rem;
+}
+
+/* Tablas dentro de bloques de código */
+.md-typeset pre code table {
+  width: auto;
+  min-width: 100%;
+}
+
+/* Asegurar que los admonitions con código también respeten límites */
+.md-typeset .admonition pre,
+.md-typeset details pre {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Limitar el ancho de líneas de código muy largas */
+.md-typeset pre > code {
+  max-width: 100%;
+  display: block;
+}
+
+/* Scroll personalizado para bloques de código */
+.md-typeset pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.md-typeset pre::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.md-typeset pre::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.md-typeset pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Prevenir overflow en contenedor principal */
+.md-content__inner {
+  overflow-x: hidden;
+}
+
+/* Ajuste responsive para bloques de código */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset pre {
+    font-size: 0.85em;
+  }
+  
+  .md-typeset pre code {
+    padding: 0.8rem;
+  }
+}
+
+/* Tablas mejoradas */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) thead {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+.md-typeset table:not([class]) thead th {
+  color: white;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: rgba(255, 102, 0, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background-color: rgba(255, 102, 0, 0.15);
+}
+
+/* Formato de diagramas ASCII */
+.md-typeset pre code {
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  line-height: 1.4;
+}
+
+/* Citas mejoradas */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding-left: 1rem;
+  background-color: rgba(255, 102, 0, 0.05);
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background-color: rgba(255, 102, 0, 0.1);
+}
+
+/* Estilos de línea de comandos */
+.md-typeset .language-bash::before,
+.md-typeset .language-powershell::before,
+.md-typeset .language-shell::before {
+  content: "$";
+  display: inline-block;
+  margin-right: 0.5em;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Estilo REPL de Python */
+.md-typeset .language-python .gp {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Insignias en línea */
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: var(--md-primary-fg-color);
+}
+
+.badge.aws {
+  background-color: #ff9900;
+}
+
+.badge.azure {
+  background-color: #0078d4;
+}
+
+.badge.gcp {
+  background-color: #4285f4;
+}
+
+.badge.python {
+  background-color: #3776ab;
+}
+
+.badge.success {
+  background-color: #4caf50;
+}
+
+.badge.warning {
+  background-color: #ff9800;
+}
+
+.badge.error {
+  background-color: #f44336;
+}
+
+/* Listas mejoradas */
+.md-typeset ol,
+.md-typeset ul {
+  line-height: 1.8;
+}
+
+/* Contenedores estilo tarjeta */
+.card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+  color: var(--md-primary-fg-color);
+}
+
+/* Mejoras responsive */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset table:not([class]) {
+    font-size: 0.85em;
+  }
+}
+
+/* Estilos de impresión */
+@media print {
+  .md-header,
+  .md-footer,
+  .md-sidebar,
+  .md-nav {
+    display: none !important;
+  }
+  
+  .md-content {
+    max-width: 100% !important;
+  }
+}
+
+/* Mejoras de resaltado de sintaxis */
+.md-typeset .highlight .hll {
+  background-color: rgba(255, 235, 59, 0.3);
+}
+
+/* Estilos de diagramas Mermaid */
+.mermaid {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+[data-md-color-scheme="slate"] .mermaid {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Barra de desplazamiento personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--md-default-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-default-fg-color--light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-default-fg-color);
+}
+
+/* Desplazamiento suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Migas de pan de navegación mejoradas */
+.md-path {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Mejoras del pie de página */
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* Mejora del botón volver arriba */
+.md-top {
+  background-color: var(--md-primary-fg-color);
+  width: 4rem;
+  height: 4rem;
+  font-size: 0.5rem;
+}
+
+.md-top:hover {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* ============================================
+   TABLAS Y DIAGRAMAS CENTRADOS
+   ============================================ */
+
+/* Centrar todas las tablas */
+.md-typeset table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Asegurar que el contenedor de tabla también esté centrado */
+.md-typeset .md-typeset__table {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.md-typeset .md-typeset__scrollwrap {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Centrar diagramas Mermaid con estilos mejorados */
+.mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Centrar imágenes */
+.md-typeset img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* Centrar figuras con pies de foto */
+.md-typeset figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+
+.md-typeset figcaption {
+  text-align: center;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.5rem;
+}
+
+/* Ajustes responsive para contenido centrado */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset table {
+    width: 100%;
+    font-size: 0.85em;
+  }
+  
+  .mermaid {
+    padding: 0.5rem;
+    margin: 1rem auto;
+  }
+}
+
+/* ============================================
+   DISEÑO DE CABECERA Y BARRA LATERAL FIJAS
+   ============================================ */
+
+/* Cabecera fija en la parte superior */
+.md-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+/* Barra lateral fija a la izquierda */
+.md-sidebar--primary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12.1rem;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 3;
+  padding-top: 3.5rem; /* Espacio para cabecera fija */
+}
+
+/* Asegurar que la barra lateral se desplace independientemente */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  height: calc(100vh - 3.5rem);
+  overflow-y: auto;
+}
+
+/* Barra lateral secundaria (TOC) a la derecha si existe */
+.md-sidebar--secondary {
+  position: fixed;
+  top: 3.5rem;
+  right: 0;
+  width: 12.1rem;
+  height: calc(100vh - 3.5rem);
+  overflow-y: auto;
+  z-index: 2;
+}
+
+/* Área de contenido principal con márgenes adecuados */
+.md-content {
+  margin-left: 12.5rem; /* Espacio para barra lateral izquierda */
+  margin-right: 0;
+  padding-top: 4rem; /* Espacio para cabecera fija */
+}
+
+/* Ajustes del contenedor de contenido */
+.md-content__inner {
+  margin: 0 auto;
+  padding: 0 0.8rem;
+}
+
+/* Mejorar visibilidad de elementos de navegación */
+.md-nav__item--active > .md-nav__link {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+.md-nav__link--active {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+/* Mejor espaciado para navegación anidada */
+.md-nav__list .md-nav__list {
+  padding-left: 0.6rem;
+}
+
+/* Iconos de expandir/colapsar navegación */
+.md-nav__item--nested > .md-nav__link::after {
+  content: "▸";
+  float: right;
+  transition: transform 0.25s;
+}
+
+.md-nav__item--nested.md-nav__item--active > .md-nav__link::after {
+  transform: rotate(90deg);
+}
+
+/* Ajustes responsive para pantallas pequeñas */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    position: fixed;
+    transform: translateX(-12.1rem);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .md-sidebar--primary[data-md-state="visible"] {
+    transform: translateX(0);
+  }
+  
+  .md-content {
+    margin-left: 0;
+    padding-top: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 76.2em) {
+  /* Mostrar tabla de contenidos a la derecha para pantallas grandes */
+  .md-content {
+    margin-right: 12.5rem;
+  }
+}
+
+/* Desplazamiento suave para la navegación */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--md-default-fg-color--light) transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background-color: var(--md-default-fg-color--light);
+  border-radius: 0.2rem;
+}
+
+/* Asegurar que la búsqueda sea accesible en cabecera fija */
+.md-search {
+  position: relative;
+}
+
+/* Ajuste del botón volver arriba para cabecera fija */
+.md-top {
+  bottom: 0.8rem;
+  right: 0.8rem;
+}
