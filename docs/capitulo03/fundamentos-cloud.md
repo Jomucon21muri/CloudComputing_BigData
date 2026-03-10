@@ -2142,7 +2142,7 @@ Además, proveedores invierten en energías renovables:
 
 La construcción y operación de clouds enfrenta múltiples desafíos técnicos y organizacionales:
 
-```
+```text
 ┌───────────────────────────────────────────────────────┐
 │           RETOS PRINCIPALES EN CLOUD                  │
 │                                                       │
@@ -2190,7 +2190,7 @@ La construcción y operación de clouds enfrenta múltiples desafíos técnicos 
 | **Jitter** | Variabilidad impredecible | Networking dedicado, Direct Connect |
 
 **Ejemplo: SLA de AWS EC2**
-```
+```text
 AWS EC2 SLA:
 - Single AZ: 99.5% uptime
 - Multi-AZ (misma región): 99.99% uptime
@@ -2301,7 +2301,7 @@ cloudtrail.create_trail(
 
 **Framework de Seguridad:**
 
-```
+```text
 CIS (Center for Internet Security) Benchmarks para Cloud:
 1. Identity and Access Management
 2. Logging and Monitoring
@@ -2426,7 +2426,7 @@ Pero adopción limitada, proveedores prefieren APIs propietarias (lock-in).
    - Difícil estimar costes futuros
 
 **Ejemplo de complejidad AWS EC2:**
-```
+```text
 Factores de coste:
 - Tipo de instancia (t3, m5, c5, r5, etc.) = 400+ tipos
 - Región (us-east-1, eu-west-1, etc.) = 30+ regiones
@@ -2517,7 +2517,7 @@ budgets.create_budget(
 
 **Áreas de estandarización:**
 
-```
+```text
 ┌────────────────────────────────────────────────────┐
 │      ÁREAS DE ESTANDARIZACIÓN CLOUD                │
 │                                                    │
