@@ -609,50 +609,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-retos-principales-en-cloud-virtualizacion-servicios-web-rendimiento-apis-control-estandares-seguridad-y-contabilidad-privacidad-medicion-costes-calidad-servicio-qos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20┌───────────────────────────────────────────────────────┐ │ RETOS PRINCIPALES EN CLOUD │ │ │ │ ┌───────────────┐ ┌──────────────┐ │ │ │ Virtualización│ │ Servicios Web│ │ │ │ - Rendimiento │ │ - APIs │ │ │ │ - Control │ │ - Estándares │ │ │ └───────────────┘ └──────────────┘ │ │ │ │ ┌──────────────┐ ┌──────────────┐ │ │ │ Seguridad y │ │ Contabilidad │ │ │ │ Privacidad │ │ - Medición │ │ │ │ │ │ - Costes │ │ │ └──────────────┘ └──────────────┘ │ │ │ │ ┌──────────────────┐ │ │ │ Calidad Servicio │ │ │ │ (QoS) │ │ │ └──────────────────┘ │ └───────────────────────────────────────────────────────┘
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-2-3-4-5-6-7-8-9cis-center-for-internet-security-benchmarks-para-cloud-1-identity-and-access-management-2-logging-and-monitoring-3-networking-4-compute-vms-5-storage-6-databases-cada-benchmark-con-100-controles-especificos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 2 3 4 5 6 7 8 9CIS (Center for Internet Security) Benchmarks para Cloud: 1. Identity and Access Management 2. Logging and Monitoring 3. Networking 4. Compute (VMs) 5. Storage 6. Databases Cada benchmark con 100+ controles específicos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pero-adopcion-limitada-proveedores-prefieren-apis-propietarias-lock-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pero adopción limitada, proveedores prefieren APIs propietarias (lock-in).
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43-44-45-46-47-48-49-50-51-1-aws-cost-explorer-analisis-historico-y-forecast-import-boto3-from-datetime-import-datetime-timedelta-ce-boto3clientce-response-ceget_cost_forecast-timeperiod-start-datetimenowstrftimey-m-d-end-datetimenow-timedeltadays30strftimey-m-d-metricunblended_cost-granularitymonthly-forecast-floatresponsetotalamount-printfforecast-proximo-mes-forecast2f-2-aws-budgets-alertas-proactivas-budgets-boto3clientbudgets-budgetscreate_budget-accountid123456789012-budget-budgetname-presupuesto-mensual-budgetlimit-amount-10000-10000mes-unit-usd-timeunit-monthly-budgettype-cost-notificationswithsubscribers-notification-notificationtype-actual-comparisonoperator-greater_than-threshold-80-alertar-al-80-thresholdtype-percentage-subscribers-subscriptiontype-email-address-finanzasempresacom-ahora-recibiras-email-cuando-gastes-8000-80-de-10k" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51# 1. AWS Cost Explorer - Análisis histórico y forecast import boto3 from datetime import datetime, timedelta ce = boto3.client('ce') response = ce.get_cost_forecast( TimePeriod={ 'Start': datetime.now().strftime('%Y-%m-%d'), 'End': (datetime.now() + timedelta(days=30)).strftime('%Y-%m-%d') }, Metric='UNBLENDED_COST', Granularity='MONTHLY' ) forecast = float(response['Total']['Amount']) print(f"Forecast próximo mes: ${forecast:.2f}") # 2. AWS Budgets - Alertas proactivas budgets = boto3.client('budgets') budgets.create_budget( AccountId='123456789012', Budget={ 'BudgetName': 'Presupuesto-Mensual', 'BudgetLimit': { 'Amount': '10000', # $10,000/mes 'Unit': 'USD' }, 'TimeUnit': 'MONTHLY', 'BudgetType': 'COST' }, NotificationsWithSubscribers=[ { 'Notification': { 'NotificationType': 'ACTUAL', 'ComparisonOperator': 'GREATER_THAN', 'Threshold': 80, # Alertar al 80% 'ThresholdType': 'PERCENTAGE' }, 'Subscribers': [ { 'SubscriptionType': 'EMAIL', 'Address': 'finanzas@empresa.com' } ] } ] ) # Ahora recibirás email cuando gastes &gt;$8,000 (80% de $10K)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#36-estrategias-de-adopcion-de-cloud-computing" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1488,50 +1444,6 @@
     <span class="md-ellipsis">
       
         3.5. Retos y desafíos en Cloud Computing
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-retos-principales-en-cloud-virtualizacion-servicios-web-rendimiento-apis-control-estandares-seguridad-y-contabilidad-privacidad-medicion-costes-calidad-servicio-qos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20┌───────────────────────────────────────────────────────┐ │ RETOS PRINCIPALES EN CLOUD │ │ │ │ ┌───────────────┐ ┌──────────────┐ │ │ │ Virtualización│ │ Servicios Web│ │ │ │ - Rendimiento │ │ - APIs │ │ │ │ - Control │ │ - Estándares │ │ │ └───────────────┘ └──────────────┘ │ │ │ │ ┌──────────────┐ ┌──────────────┐ │ │ │ Seguridad y │ │ Contabilidad │ │ │ │ Privacidad │ │ - Medición │ │ │ │ │ │ - Costes │ │ │ └──────────────┘ └──────────────┘ │ │ │ │ ┌──────────────────┐ │ │ │ Calidad Servicio │ │ │ │ (QoS) │ │ │ └──────────────────┘ │ └───────────────────────────────────────────────────────┘
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-2-3-4-5-6-7-8-9cis-center-for-internet-security-benchmarks-para-cloud-1-identity-and-access-management-2-logging-and-monitoring-3-networking-4-compute-vms-5-storage-6-databases-cada-benchmark-con-100-controles-especificos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 2 3 4 5 6 7 8 9CIS (Center for Internet Security) Benchmarks para Cloud: 1. Identity and Access Management 2. Logging and Monitoring 3. Networking 4. Compute (VMs) 5. Storage 6. Databases Cada benchmark con 100+ controles específicos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pero-adopcion-limitada-proveedores-prefieren-apis-propietarias-lock-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pero adopción limitada, proveedores prefieren APIs propietarias (lock-in).
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43-44-45-46-47-48-49-50-51-1-aws-cost-explorer-analisis-historico-y-forecast-import-boto3-from-datetime-import-datetime-timedelta-ce-boto3clientce-response-ceget_cost_forecast-timeperiod-start-datetimenowstrftimey-m-d-end-datetimenow-timedeltadays30strftimey-m-d-metricunblended_cost-granularitymonthly-forecast-floatresponsetotalamount-printfforecast-proximo-mes-forecast2f-2-aws-budgets-alertas-proactivas-budgets-boto3clientbudgets-budgetscreate_budget-accountid123456789012-budget-budgetname-presupuesto-mensual-budgetlimit-amount-10000-10000mes-unit-usd-timeunit-monthly-budgettype-cost-notificationswithsubscribers-notification-notificationtype-actual-comparisonoperator-greater_than-threshold-80-alertar-al-80-thresholdtype-percentage-subscribers-subscriptiontype-email-address-finanzasempresacom-ahora-recibiras-email-cuando-gastes-8000-80-de-10k" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51# 1. AWS Cost Explorer - Análisis histórico y forecast import boto3 from datetime import datetime, timedelta ce = boto3.client('ce') response = ce.get_cost_forecast( TimePeriod={ 'Start': datetime.now().strftime('%Y-%m-%d'), 'End': (datetime.now() + timedelta(days=30)).strftime('%Y-%m-%d') }, Metric='UNBLENDED_COST', Granularity='MONTHLY' ) forecast = float(response['Total']['Amount']) print(f"Forecast próximo mes: ${forecast:.2f}") # 2. AWS Budgets - Alertas proactivas budgets = boto3.client('budgets') budgets.create_budget( AccountId='123456789012', Budget={ 'BudgetName': 'Presupuesto-Mensual', 'BudgetLimit': { 'Amount': '10000', # $10,000/mes 'Unit': 'USD' }, 'TimeUnit': 'MONTHLY', 'BudgetType': 'COST' }, NotificationsWithSubscribers=[ { 'Notification': { 'NotificationType': 'ACTUAL', 'ComparisonOperator': 'GREATER_THAN', 'Threshold': 80, # Alertar al 80% 'ThresholdType': 'PERCENTAGE' }, 'Subscribers': [ { 'SubscriptionType': 'EMAIL', 'Address': 'finanzas@empresa.com' } ] } ] ) # Ahora recibirás email cuando gastes &gt;$8,000 (80% de $10K)
       
     </span>
   </a>
@@ -5275,8 +5187,8 @@ Despite el consumo absoluto, el cloud es más eficiente que miles de pequeños d
 </ul>
 <h2 id="35-retos-y-desafios-en-cloud-computing">3.5. Retos y desafíos en Cloud Computing<a class="headerlink" href="#35-retos-y-desafios-en-cloud-computing" title="Enlace a esta sección">¶</a></h2>
 <p><strong>Visión general de retos:</strong></p>
-<p>La construcción y operación de clouds enfrenta múltiples desafíos técnicos y organizacionales:</p>
-<h2 id="1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-retos-principales-en-cloud-virtualizacion-servicios-web-rendimiento-apis-control-estandares-seguridad-y-contabilidad-privacidad-medicion-costes-calidad-servicio-qos"><div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1"> 1</a></span>
+<p>La construcción y operación de clouds enfrenta múltiples desafíos técnicos y organizacionales:
+</p><div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-33-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-33-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-33-4"> 4</a></span>
@@ -5315,7 +5227,7 @@ Despite el consumo absoluto, el cloud es más eficiente que miles de pequeños d
 </span><span id="__span-33-18"><a id="__codelineno-33-18" name="__codelineno-33-18"></a>│            │ (QoS)            │                       │
 </span><span id="__span-33-19"><a id="__codelineno-33-19" name="__codelineno-33-19"></a>│            └──────────────────┘                       │
 </span><span id="__span-33-20"><a id="__codelineno-33-20" name="__codelineno-33-20"></a>└───────────────────────────────────────────────────────┘
-</span></code></pre></div></td></tr></tbody></table></div><a class="headerlink" href="#1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-retos-principales-en-cloud-virtualizacion-servicios-web-rendimiento-apis-control-estandares-seguridad-y-contabilidad-privacidad-medicion-costes-calidad-servicio-qos" title="Enlace a esta sección">¶</a></h2>
+</span></code></pre></div></td></tr></tbody></table></div><p></p>
 <p><strong>Reto 1: Calidad de Servicio (QoS):</strong></p>
 <p><strong>Problema:</strong> La ausencia de QoS puede generar que las organizaciones declinen del uso del cloud.</p>
 <p><strong>Aspectos críticos:</strong></p>
@@ -5552,7 +5464,7 @@ Despite el consumo absoluto, el cloud es más eficiente que miles de pequeños d
 </span><span id="__span-35-70"><a id="__codelineno-35-70" name="__codelineno-35-70"></a><span class="c1"># - Resultado (éxito/fallo)</span>
 </span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Framework de Seguridad:</strong></p>
-<h2 id="1-2-3-4-5-6-7-8-9cis-center-for-internet-security-benchmarks-para-cloud-1-identity-and-access-management-2-logging-and-monitoring-3-networking-4-compute-vms-5-storage-6-databases-cada-benchmark-con-100-controles-especificos"><div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
 <span class="normal"><a href="#__codelineno-36-2">2</a></span>
 <span class="normal"><a href="#__codelineno-36-3">3</a></span>
 <span class="normal"><a href="#__codelineno-36-4">4</a></span>
@@ -5569,7 +5481,7 @@ Despite el consumo absoluto, el cloud es más eficiente que miles de pequeños d
 </span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7"></a>6. Databases
 </span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8"></a>
 </span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9"></a>Cada benchmark con 100+ controles específicos
-</span></code></pre></div></td></tr></tbody></table></div><a class="headerlink" href="#1-2-3-4-5-6-7-8-9cis-center-for-internet-security-benchmarks-para-cloud-1-identity-and-access-management-2-logging-and-monitoring-3-networking-4-compute-vms-5-storage-6-databases-cada-benchmark-con-100-controles-especificos" title="Enlace a esta sección">¶</a></h2>
+</span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Reto 3: Virtualización:</strong></p>
 <p><strong>Problema:</strong> Los accesos simultáneos de múltiples clientes a los servicios del cloud demandan más protección y control.</p>
 <p><strong>Desafíos:</strong></p>
@@ -5739,7 +5651,7 @@ Despite el consumo absoluto, el cloud es más eficiente que miles de pequeños d
 <li><strong>TOSCA</strong> (Topology and Orchestration Specification)</li>
 <li><strong>OpenAPI</strong> (Swagger) para documentación</li>
 </ul>
-<h2 id="pero-adopcion-limitada-proveedores-prefieren-apis-propietarias-lock-in">Pero adopción limitada, proveedores prefieren APIs propietarias (lock-in).<a class="headerlink" href="#pero-adopcion-limitada-proveedores-prefieren-apis-propietarias-lock-in" title="Enlace a esta sección">¶</a></h2>
+<p>Pero adopción limitada, proveedores prefieren APIs propietarias (lock-in).</p>
 <p><strong>Reto 5: Contabilidad y Control de Costes:</strong></p>
 <p><strong>Problema:</strong> Se requiere control de costos para no desbordar a las organizaciones con incrementos de pagos.</p>
 <p><strong>Desafíos:</strong></p>
@@ -5783,7 +5695,7 @@ Despite el consumo absoluto, el cloud es más eficiente que miles de pequeños d
 <li>Auto-scaling mal configurado</li>
 </ol>
 <p><strong>Herramientas de FinOps (Financial Operations):</strong></p>
-<h2 id="1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43-44-45-46-47-48-49-50-51-1-aws-cost-explorer-analisis-historico-y-forecast-import-boto3-from-datetime-import-datetime-timedelta-ce-boto3clientce-response-ceget_cost_forecast-timeperiod-start-datetimenowstrftimey-m-d-end-datetimenow-timedeltadays30strftimey-m-d-metricunblended_cost-granularitymonthly-forecast-floatresponsetotalamount-printfforecast-proximo-mes-forecast2f-2-aws-budgets-alertas-proactivas-budgets-boto3clientbudgets-budgetscreate_budget-accountid123456789012-budget-budgetname-presupuesto-mensual-budgetlimit-amount-10000-10000mes-unit-usd-timeunit-monthly-budgettype-cost-notificationswithsubscribers-notification-notificationtype-actual-comparisonoperator-greater_than-threshold-80-alertar-al-80-thresholdtype-percentage-subscribers-subscriptiontype-email-address-finanzasempresacom-ahora-recibiras-email-cuando-gastes-8000-80-de-10k"><div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1"> 1</a></span>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-40-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-40-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-40-4"> 4</a></span>
@@ -5884,7 +5796,7 @@ Despite el consumo absoluto, el cloud es más eficiente que miles de pequeños d
 </span><span id="__span-40-49"><a id="__codelineno-40-49" name="__codelineno-40-49"></a><span class="p">)</span>
 </span><span id="__span-40-50"><a id="__codelineno-40-50" name="__codelineno-40-50"></a>
 </span><span id="__span-40-51"><a id="__codelineno-40-51" name="__codelineno-40-51"></a><span class="c1"># Ahora recibirás email cuando gastes &gt;$8,000 (80% de $10K)</span>
-</span></code></pre></div></td></tr></tbody></table></div><a class="headerlink" href="#1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30-31-32-33-34-35-36-37-38-39-40-41-42-43-44-45-46-47-48-49-50-51-1-aws-cost-explorer-analisis-historico-y-forecast-import-boto3-from-datetime-import-datetime-timedelta-ce-boto3clientce-response-ceget_cost_forecast-timeperiod-start-datetimenowstrftimey-m-d-end-datetimenow-timedeltadays30strftimey-m-d-metricunblended_cost-granularitymonthly-forecast-floatresponsetotalamount-printfforecast-proximo-mes-forecast2f-2-aws-budgets-alertas-proactivas-budgets-boto3clientbudgets-budgetscreate_budget-accountid123456789012-budget-budgetname-presupuesto-mensual-budgetlimit-amount-10000-10000mes-unit-usd-timeunit-monthly-budgettype-cost-notificationswithsubscribers-notification-notificationtype-actual-comparisonoperator-greater_than-threshold-80-alertar-al-80-thresholdtype-percentage-subscribers-subscriptiontype-email-address-finanzasempresacom-ahora-recibiras-email-cuando-gastes-8000-80-de-10k" title="Enlace a esta sección">¶</a></h2>
+</span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Reto 6: Estandarización:</strong></p>
 <p><strong>Problema:</strong> El manejo de estándares para el despliegue de nubes aún no está del todo establecido.</p>
 <p><strong>Organizaciones trabajando en estandarización:</strong></p>
