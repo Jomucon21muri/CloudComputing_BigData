@@ -2,7 +2,7 @@
 
 ## 6.1. ¿Qué es un Data Lake?
 
-**Data Lake:** Repositorio centralizado que permite almacenar todos los datos estructurados, semiestructurados y no estructurados a cualquier escala, en su formato nativo, con esquema-on-read.
+> **Data Lake:** Repositorio centralizado que permite almacenar todos los datos estructurados, semiestructurados y no estructurados a cualquier escala, en su formato nativo, con esquema-on-read.
 
 | Característica | Data Warehouse | Data Lake |
 |----------------|----------------|-----------|
@@ -32,24 +32,28 @@ Datos Fuente → Ingestar directamente en Data Lake → Aplicar esquema al leer
 **Características de un Data Lake:**
 
 **1. Almacenamiento de todos los tipos de datos:**
+
 - Estructurados: CSV, Parquet, Avro
 - Semi-estructurados: JSON, XML
 - No estructurados: PDFs, imágenes, vídeos, logs
 
 **2. Almacenamiento económico:**
+
 - Object storage barato (S3, ADLS, GCS)
 - $0.023/GB/mes vs $1-10/GB/mes en DW
 
 **3. Escalabilidad:**
+
 - Petabyte-scale
 - Sin límites prácticos
 
 **4. Flexibilidad:**
+
 - Sin esquema predefinidoNo rechaza datos
 - Exploración sin restricciones
 
 **5. Integración con herramientas Big Data:**
-- Compatible con Spark, Hadoop, Presto, etc.
+Compatible con Spark, Hadoop, Presto, etc.
 
 ## 6.2. Arquitectura de tres capas (zonas)
 
@@ -58,46 +62,46 @@ Datos Fuente → Ingestar directamente en Data Lake → Aplicar esquema al leer
 │                   RAW ZONE                          │
 │  (Datos crudos, tal como llegan)                    │
 │                                                     │
-│  /raw/covid/2026/02/19/casos.csv                   │
-│  /raw/ine/poblacion/pob_2024.xlsx                  │
-│  /raw/oms/epidemias/brotes.json                    │
+│  /raw/covid/2026/02/19/casos.csv                    │
+│  /raw/ine/poblacion/pob_2024.xlsx                   │
+│  /raw/oms/epidemias/brotes.json                     │
 │                                                     │
 │  Características:                                   │
-│  - Inmutables (append-only)                        │
-│  - Formato original                                │
-│  - Sin transformaciones                            │
-│  - Particionado por fecha                          │
+│  - Inmutables (append-only)                         │
+│  - Formato original                                 │
+│  - Sin transformaciones                             │
+│  - Particionado por fecha                           │
 └────────────────┬────────────────────────────────────┘
                  ↓ ETL/Limpieza/Validación
 ┌─────────────────────────────────────────────────────┐
 │                 TRUSTED ZONE                        │
-│  (Datos validados, limpios, formato estándar)      │
+│  (Datos validados, limpios, formato estándar)       │
 │                                                     │
-│  /trusted/covid/casos_validados.parquet            │
-│  /trusted/ine/poblacion_clean.parquet              │
-│  /trusted/oms/brotes_normalized.parquet            │
+│  /trusted/covid/casos_validados.parquet             │
+│  /trusted/ine/poblacion_clean.parquet               │
+│  /trusted/oms/brotes_normalized.parquet             │
 │                                                     │
 │  Características:                                   │
-│  - Formatos columnares (Parquet, Avro)            │
-│  - Comprimidos                                     │
-│  - Esquemas validados                              │
-│  - Deduplicados                                    │
-│  - Particionados                                   │
+│  - Formatos columnares (Parquet, Avro)              │
+│  - Comprimidos                                      │
+│  - Esquemas validados                               │
+│  - Deduplicados                                     │
+│  - Particionados                                    │
 └────────────────┬────────────────────────────────────┘
                  ↓ Transformaciones/Agregaciones
 ┌─────────────────────────────────────────────────────┐
 │                 REFINED ZONE                        │
-│  (Datos agregados, listos para consumo)            │
+│  (Datos agregados, listos para consumo)             │
 │                                                     │
-│  /refined/covid_por_ccaa_mes/                      │
-│  /refined/poblacion_agregada/                      │
-│  /refined/indicadores_epidemiologicos/             │
+│  /refined/covid_por_ccaa_mes/                       │
+│  /refined/poblacion_agregada/                       │
+│  /refined/indicadores_epidemiologicos/              │
 │                                                     │
 │  Características:                                   │
-│  - Agregados y optimizados                         │
-│  - Modelos dimensionales                           │
-│  - Optimizados para queries                        │
-│  - Exportables a DW                                │
+│  - Agregados y optimizados                          │
+│  - Modelos dimensionales                            │
+│  - Optimizados para queries                         │
+│  - Exportables a DW                                 │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -106,6 +110,7 @@ Datos Fuente → Ingestar directamente en Data Lake → Aplicar esquema al leer
 **Propósito:** Almacenar datos tal como llegan, sin modificar.
 
 **Características:**
+
 - **Inmutable**: Nunca se modifican los archivos (append-only)
 - **Formato original**: CSV si llega CSV, JSON si llega JSON
 - **Particionado temporal**: Por fecha de ingesta
@@ -179,6 +184,7 @@ ingest_to_raw(url_covid, "covid_casos")
 **Propósito:** Datos validados, limpios y en formatos optimizados.
 
 **Características:**
+
 - **Formato columnar**: Parquet (preferred) o Avro
 - **Comprimido**: Snappy, GZIP
 - **Esquema definido**: Schema enforcement
@@ -265,6 +271,7 @@ print("Datos escritos en zona TRUSTED")
 **Propósito:** Datos agregados, transformados y listos para consumo directo.
 
 **Características:**
+
 - **Agregaciones pre-calculadas**: Sumas, promedios, etc.
 - **Modelos dimensionales**: Preparados para OLAP
 - **Optimizados para queries específicas**: Índices, ordenación
@@ -388,11 +395,13 @@ df.write.partitionBy("year", "month", "ccaa").parquet("s3://bucket/covid/")
 **Best practices de particionado:**
 
 **✅ Hacer:**
+
 - Particionar por columnas de filtro frecuente (fecha, región)
 - Tamaño de partición: 128 MB - 1 GB (óptimo para Spark)
 - Usar tipos de dato apropiados (int para year, no string)
 
 **❌ Evitar:**
+
 - Particionar por columnas de alta cardinalidad (ej: usuario_id con millones de valores)
 - Particiones muy pequeñas (< 10 MB) → muchos archivos pequeños
 - Demasiados niveles de particionado (> 4 niveles)
@@ -400,11 +409,11 @@ df.write.partitionBy("year", "month", "ccaa").parquet("s3://bucket/covid/")
 **Ejemplo de problemas:**
 
 ```python
-# ❌ MAL: Particionar por usuario (millones de particiones)
+# MAL: Particionar por usuario (millones de particiones)
 df.write.partitionBy("usuario_id").parquet("s3://bucket/datos/")
 # Resultado: 5,000,000 carpetas con 1 archivo cada una → performance horrible
 
-# ✅ BIEN: Particionar por fecha
+# BIEN: Particionar por fecha
 df.write.partitionBy("year", "month").parquet("s3://bucket/datos/")
 # Resultado: 24 carpetas para 2 años → performance óptima
 ```
@@ -414,6 +423,7 @@ df.write.partitionBy("year", "month").parquet("s3://bucket/datos/")
 **Parquet (recomendado):**
 
 **Características:**
+
 - **Columnar**: Almacena por columnas, no por filas
 - **Comprimido**: Snappy, GZIP, LZO
 - **Esquema incluido**: Autodescriptivo
@@ -462,11 +472,13 @@ Query: SELECT fecha, casos WHERE ccaa='Madrid'
 **Avro:**
 
 **Características:**
+
 - **Row-based**: Almacena por filas
 - **Esquema incluido**: en JSON
 - **Evolución de esquema**: Soporta cambios de esquema
 
 **Cuándo usar Avro:**
+
 - Streaming de datos
 - Aplicaciones que necesitan escribir filas completas frecuentemente
 - Kafka con Schema Registry
@@ -474,6 +486,7 @@ Query: SELECT fecha, casos WHERE ccaa='Madrid'
 **Delta Lake (evolución de Parquet):**
 
 **Características:**
+
 - **Parquet con transacciones ACID**
 - **Time Travel**: Versiones de datos
 - **Schema Evolution**: Cambiar esquema sin reescribir
@@ -512,6 +525,7 @@ df_last_week = spark.read.format("delta") \
 **Data Swamp**: Data Lake sin gobierno, metadatos ni organización → inútil.
 
 **Síntomas:**
+
 - ❌ Nadie sabe qué datos hay
 - ❌ Duplicación masiva
 - ❌ Sin documentación
