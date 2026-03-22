@@ -1427,7 +1427,7 @@
 <span class="normal"><a href="#__codelineno-0-14">14</a></span>
 <span class="normal"><a href="#__codelineno-0-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>┌──────────────────────────────────────────────────────┐
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>│              NameNode (Master)                       │
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>│  - Mantiene metadatos (nombre, ubicación archivos)  │
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>│  - Mantiene metadatos (nombre, ubicación archivos)   │
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>│  - Gestiona namespace                                │
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>│  - Coordina acceso                                   │
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>└─────────────────────┬────────────────────────────────┘
@@ -1442,15 +1442,21 @@
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>└───────────┘  └───────────┘  └───────────┘
 </span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Características clave:</strong></p>
-<p><strong>1. Bloques grandes:</strong>
-- Tamaño típico: 128 MB o 256 MB
-- Por qué: minimiza seeks de disco, optimiza throughput</p>
-<p><strong>2. Replicación:</strong>
-- Replication factor: 3 (por defecto)
-- Fault tolerance: puede perder 2 nodos sin pérdida de datos</p>
-<p><strong>3. Write-once-read-many:</strong>
-- Archivos inmutables
-- Optimizado para análisis, no para actualizaciones</p>
+<p><strong>1. Bloques grandes:</strong></p>
+<ul>
+<li>Tamaño típico: 128 MB o 256 MB</li>
+<li>Por qué: minimiza seeks de disco, optimiza throughput</li>
+</ul>
+<p><strong>2. Replicación:</strong></p>
+<ul>
+<li>Replication factor: 3 (por defecto)</li>
+<li>Fault tolerance: puede perder 2 nodos sin pérdida de datos</li>
+</ul>
+<p><strong>3. Write-once-read-many:</strong></p>
+<ul>
+<li>Archivos inmutables</li>
+<li>Optimizado para análisis, no para actualizaciones</li>
+</ul>
 <p><strong>Ejemplo:</strong></p>
 <div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
@@ -1479,16 +1485,20 @@
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a>→ Siempre mantiene 3 copias
 </span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Cuándo usar HDFS:</strong></p>
-<p>✅ <strong>Usar HDFS si:</strong>
-- Cluster Hadoop on-premise
-- Procesamiento MapReduce/Spark batch
-- Archivos grandes (GBs)
-- Alta throughput más importante que latencia</p>
-<p>❌ <strong>NO usar HDFS si:</strong>
-- Cloud-native (usar S3/ADLS/GCS en su lugar)
-- Archivos pequeños (&lt; 1 MB)
-- Actualizaciones frecuentes
-- Baja latencia crítica</p>
+<p><strong>Usar HDFS si:</strong></p>
+<ul>
+<li>Cluster Hadoop on-premise</li>
+<li>Procesamiento MapReduce/Spark batch</li>
+<li>Archivos grandes (GBs)</li>
+<li>Alta throughput más importante que latencia</li>
+</ul>
+<p><strong>NO usar HDFS si:</strong></p>
+<ul>
+<li>Cloud-native (usar S3/ADLS/GCS en su lugar)</li>
+<li>Archivos pequeños (&lt; 1 MB)</li>
+<li>Actualizaciones frecuentes</li>
+<li>Baja latencia crítica</li>
+</ul>
 <p><strong>En cloud:</strong>
 </p><div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
@@ -1504,16 +1514,22 @@
 </span></code></pre></div></td></tr></tbody></table></div><p></p>
 <h2 id="72-amazon-s3-simple-storage-service">7.2. Amazon S3 (Simple Storage Service)<a class="headerlink" href="#72-amazon-s3-simple-storage-service" title="Enlace a esta sección">¶</a></h2>
 <p><strong>Características:</strong></p>
-<p><strong>1. Object storage:</strong>
-- No es un filesystem tradicional
-- Almacena objetos (archivos) con metadata
-- Claves (keys) simulan carpetas</p>
-<p><strong>2. Durabilidad y disponibilidad:</strong>
-- Durabilidad: 99.999999999% (11 noves)
-- Disponibilidad: 99.99% (SLA)</p>
-<p><strong>3. Escalabilidad ilimitada:</strong>
-- Sin límite de almacenamiento
-- Sin límite de objetos</p>
+<p><strong>1. Object storage:</strong></p>
+<ul>
+<li>No es un filesystem tradicional</li>
+<li>Almacena objetos (archivos) con metadata</li>
+<li>Claves (keys) simulan carpetas</li>
+</ul>
+<p><strong>2. Durabilidad y disponibilidad:</strong></p>
+<ul>
+<li>Durabilidad: 99.999999999% (11 noves)</li>
+<li>Disponibilidad: 99.99% (SLA)</li>
+</ul>
+<p><strong>3. Escalabilidad ilimitada:</strong></p>
+<ul>
+<li>Sin límite de almacenamiento</li>
+<li>Sin límite de objetos</li>
+</ul>
 <p><strong>4. Clases de almacenamiento:</strong></p>
 <table>
 <thead>

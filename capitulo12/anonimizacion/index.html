@@ -1589,16 +1589,20 @@
 <p class="admonition-title">Privacidad en la Era del Big Data</p>
 <p>En el contexto del Big Data y análisis avanzado de datos, <strong>proteger la privacidad individual mientras se preserva la utilidad analítica</strong> es un desafío fundamental. La anonimización no es simplemente eliminar nombres, sino aplicar técnicas rigurosas que eviten la re-identificación.</p>
 </div>
-<p><strong>Contexto legal:</strong>
-- <strong>RGPD (2018)</strong>: Requiere anonimización de datos personales
-- <strong>LOPDGDD</strong>: Normativa española de protección de datos
-- <strong>HIPAA</strong> (USA): Privacidad en datos de salud
-- <strong>CCPA</strong> (California): Derechos de privacidad del consumidor</p>
-<p><strong>Contexto legal:</strong>
-- <strong>RGPD (2018)</strong>: Requiere anonimización de datos personales
-- <strong>LOPDGDD</strong>: Normativa española de protección de datos
-- <strong>HIPAA</strong> (USA): Privacidad en datos de salud
-- <strong>CCPA</strong> (California): Derechos de privacidad del consumidor</p>
+<p><strong>Contexto legal:</strong></p>
+<ul>
+<li><strong>RGPD (2018)</strong>: Requiere anonimización de datos personales</li>
+<li><strong>LOPDGDD</strong>: Normativa española de protección de datos</li>
+<li><strong>HIPAA</strong> (USA): Privacidad en datos de salud</li>
+<li><strong>CCPA</strong> (California): Derechos de privacidad del consumidor</li>
+</ul>
+<p><strong>Contexto legal:</strong></p>
+<ul>
+<li><strong>RGPD (2018)</strong>: Requiere anonimización de datos personales</li>
+<li><strong>LOPDGDD</strong>: Normativa española de protección de datos</li>
+<li><strong>HIPAA</strong> (USA): Privacidad en datos de salud</li>
+<li><strong>CCPA</strong> (California): Derechos de privacidad del consumidor</li>
+</ul>
 <hr>
 <h2 id="121-conceptos-fundamentales">12.1. Conceptos fundamentales<a class="headerlink" href="#121-conceptos-fundamentales" title="Enlace a esta sección">¶</a></h2>
 <p><strong>Anonimización vs pseudonimización:</strong></p>
@@ -2107,11 +2111,13 @@
 - <span class="arithmatex">\(\varepsilon\)</span> <strong>(epsilon)</strong>: Presupuesto de privacidad (menor = más privacidad)
 - <span class="arithmatex">\(\delta\)</span> <strong>(delta)</strong>: Probabilidad de fallo (típicamente muy pequeña)</p>
 </div>
-<p><strong>Interpretación:</strong>
-- <span class="arithmatex">\(\varepsilon = 0\)</span>: Privacidad perfecta, pero sin utilidad
-- <span class="arithmatex">\(\varepsilon = 0.1\)</span>: Privacidad muy fuerte (aplicaciones militares)
-- <span class="arithmatex">\(\varepsilon = 1\)</span>: Privacidad fuerte (recomendado)
-- <span class="arithmatex">\(\varepsilon &gt; 5\)</span>: Privacidad débil (no recomendado)</p>
+<p><strong>Interpretación:</strong></p>
+<ul>
+<li><span class="arithmatex">\(\varepsilon = 0\)</span>: Privacidad perfecta, pero sin utilidad</li>
+<li><span class="arithmatex">\(\varepsilon = 0.1\)</span>: Privacidad muy fuerte (aplicaciones militares)</li>
+<li><span class="arithmatex">\(\varepsilon = 1\)</span>: Privacidad fuerte (recomendado)</li>
+<li><span class="arithmatex">\(\varepsilon &gt; 5\)</span>: Privacidad débil (no recomendado)</li>
+</ul>
 <p><strong>Mecanismo de Laplace:</strong></p>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">  1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">  2</a></span>
@@ -2905,11 +2911,13 @@
 <span class="normal"><a href="#__codelineno-12-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c1"># Java-based tool con GUI</span>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="c1"># Download: https://arx.deidentifier.org/downloads/</span>
 </span></code></pre></div></td></tr></tbody></table></div>
-<p><strong>Características:</strong>
-- Implementa k-anonimidad, l-diversidad, t-closeness
-- Soporta múltiples algoritmos de generalización
-- Métricas de utilidad de datos
-- Interfaz gráfica intuitiva</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li>Implementa k-anonimidad, l-diversidad, t-closeness</li>
+<li>Soporta múltiples algoritmos de generalización</li>
+<li>Métricas de utilidad de datos</li>
+<li>Interfaz gráfica intuitiva</li>
+</ul>
 <hr>
 <h2 id="127-caso-practico-integrado-pipeline-completo">12.7. Caso Práctico Integrado: Pipeline Completo<a class="headerlink" href="#127-caso-practico-integrado-pipeline-completo" title="Enlace a esta sección">¶</a></h2>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">  1</a></span>
@@ -3472,19 +3480,25 @@
 </div>
 <hr>
 <h2 id="referencias-y-recursos">Referencias y recursos<a class="headerlink" href="#referencias-y-recursos" title="Enlace a esta sección">¶</a></h2>
-<p><strong>Papers fundamentales:</strong>
-- Sweeney, L. (2002). "k-Anonymity: A Model for Protecting Privacy"
-- Dwork, C. (2006). "Differential Privacy"
-- Machanavajjhala et al. (2007). "L-Diversity: Privacy Beyond k-Anonymity"</p>
-<p><strong>Herramientas:</strong>
-- <a href="https://arx.deidentifier.org/">ARX Data Anonymization</a>
-- <a href="https://github.com/google/differential-privacy">Google DP Library</a>
-- <a href="https://microsoft.github.io/presidio/">Microsoft Presidio</a>
-- <a href="https://github.com/IBM/differential-privacy-library">IBM Diffprivlib</a></p>
-<p><strong>Estándares y guías:</strong>
-- <a href="https://www.nist.gov/privacy-framework">NIST Privacy Framework</a>
-- <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/anonymisation-and-pseudonymisation/">ICO Anonymisation Code of Practice</a>
-- <a href="https://gdpr-info.eu/art-4-gdpr/">RGPD - Artículo 4(5)</a></p>
+<p><strong>Papers fundamentales:</strong></p>
+<ul>
+<li>Sweeney, L. (2002). "k-Anonymity: A Model for Protecting Privacy"</li>
+<li>Dwork, C. (2006). "Differential Privacy"</li>
+<li>Machanavajjhala et al. (2007). "L-Diversity: Privacy Beyond k-Anonymity"</li>
+</ul>
+<p><strong>Herramientas:</strong></p>
+<ul>
+<li><a href="https://arx.deidentifier.org/">ARX Data Anonymization</a></li>
+<li><a href="https://github.com/google/differential-privacy">Google DP Library</a></li>
+<li><a href="https://microsoft.github.io/presidio/">Microsoft Presidio</a></li>
+<li><a href="https://github.com/IBM/differential-privacy-library">IBM Diffprivlib</a></li>
+</ul>
+<p><strong>Estándares y guías:</strong></p>
+<ul>
+<li><a href="https://www.nist.gov/privacy-framework">NIST Privacy Framework</a></li>
+<li><a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/anonymisation-and-pseudonymisation/">ICO Anonymisation Code of Practice</a></li>
+<li><a href="https://gdpr-info.eu/art-4-gdpr/">RGPD - Artículo 4(5)</a></li>
+</ul>
 <hr>
 <div class="admonition quote">
 <p class="admonition-title">Conclusión</p>

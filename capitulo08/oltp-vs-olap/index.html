@@ -2205,16 +2205,20 @@
 <p>El <strong>Star Schema</strong> es el modelo dimensional más común, con una tabla de <strong>hechos</strong> central rodeada de tablas de <strong>dimensiones</strong>.</p>
 </div>
 <p><strong>Componentes:</strong></p>
-<p><strong>1. Tabla de hechos (Fact Table):</strong>
-- Contiene métricas/medidas numéricas (ventas, cantidad, costos)
-- Foreign keys a dimensiones
-- Grano (granularidad): Cada fila representa un evento/transacción
-- Gran volumen (millones-billones de filas)</p>
-<p><strong>2. Tablas de Dimensiones (Dimension Tables):</strong>
-- Atributos descriptivos (quién, qué, dónde, cuándo)
-- Primary key (surrogate key)
-- Desnormalizadas (pueden tener redundancia)
-- Menor volumen (miles-millones de filas)</p>
+<p><strong>1. Tabla de hechos (Fact Table):</strong></p>
+<ul>
+<li>Contiene métricas/medidas numéricas (ventas, cantidad, costos)</li>
+<li>Foreign keys a dimensiones</li>
+<li>Grano (granularidad): Cada fila representa un evento/transacción</li>
+<li>Gran volumen (millones-billones de filas)</li>
+</ul>
+<p><strong>2. Tablas de Dimensiones (Dimension Tables):</strong></p>
+<ul>
+<li>Atributos descriptivos (quién, qué, dónde, cuándo)</li>
+<li>Primary key (surrogate key)</li>
+<li>Desnormalizadas (pueden tener redundancia)</li>
+<li>Menor volumen (miles-millones de filas)</li>
+</ul>
 <hr>
 <p><strong>Ejemplo: Star Schema de ventas:</strong></p>
 <div class="language-sql highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">  1</a></span>

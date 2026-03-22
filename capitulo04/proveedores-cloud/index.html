@@ -1519,10 +1519,12 @@
 </tbody>
 </table>
 <p><strong>Actualizado:</strong> Febrero 2024</p>
-<p><strong>Regiones en España:</strong>
-- <strong>AWS</strong>: Región <code>eu-south-2</code> (Aragón) - 3 AZs - Disponible desde 2022
-- <strong>Azure</strong>: Ninguna región específica en España aún
-- <strong>GCP</strong>: Región <code>europe-southwest1</code> (Madrid) - 3 zonas - Disponible desde 2023</p>
+<p><strong>Regiones en España:</strong></p>
+<ul>
+<li><strong>AWS</strong>: Región <code>eu-south-2</code> (Aragón) - 3 AZs - Disponible desde 2022</li>
+<li><strong>Azure</strong>: Ninguna región específica en España aún</li>
+<li><strong>GCP</strong>: Región <code>europe-southwest1</code> (Madrid) - 3 zonas - Disponible desde 2023</li>
+</ul>
 <p><strong>Comparativa de servicios principales:</strong></p>
 <h4 id="computacion">Computación<a class="headerlink" href="#computacion" title="Enlace a esta sección">¶</a></h4>
 <table>
@@ -1786,40 +1788,50 @@
 </ul>
 <p><strong>Free Tier / Prueba Gratuita:</strong></p>
 <p>Todos los proveedores ofrecen capas gratuitas para probar:</p>
-<p><strong>AWS Free Tier:</strong>
-- 750 horas/mes de EC2 t2.micro (1 vCPU, 1 GB RAM) - 12 meses
-- 5 GB de S3 Standard Storage - 12 meses
-- 750 horas/mes de RDS db.t2.micro - 12 meses
-- 1 millón de solicitudes Lambda/mes - Siempre gratis
-- 25 GB de DynamoDB - Siempre gratis</p>
-<p><strong>Azure Free Account:</strong>
-- $200 crédito para 30 días
-- 12 meses de servicios gratuitos:
-  - 750 horas/mes de B1S VM (1 vCPU, 1 GB RAM)
-  - 64 GB ×  2 de almacenamiento con Managed Disks
-  - 5 GB de Blob Storage
-- Servicios siempre gratuitos: App Service, Functions, etc.</p>
-<p><strong>GCP Free Tier:</strong>
-- $300 crédito para 90 días
-- Always Free (limitado):
-  - 1 f1-micro VM (0.2 vCPU, 0.6 GB RAM) en us-regions
-  - 30 GB de Cloud Storage
-  - 1 GB de Cloud Functions invocations
-  - BigQuery: 1 TB de consultas/mes</p>
+<p><strong>AWS Free Tier:</strong></p>
+<ul>
+<li>750 horas/mes de EC2 t2.micro (1 vCPU, 1 GB RAM) - 12 meses</li>
+<li>5 GB de S3 Standard Storage - 12 meses</li>
+<li>750 horas/mes de RDS db.t2.micro - 12 meses</li>
+<li>1 millón de solicitudes Lambda/mes - Siempre gratis</li>
+<li>25 GB de DynamoDB - Siempre gratis</li>
+</ul>
+<p><strong>Azure Free Account:</strong></p>
+<ul>
+<li>$200 crédito para 30 días</li>
+<li>12 meses de servicios gratuitos:</li>
+<li>750 horas/mes de B1S VM (1 vCPU, 1 GB RAM)</li>
+<li>64 GB ×  2 de almacenamiento con Managed Disks</li>
+<li>5 GB de Blob Storage</li>
+<li>Servicios siempre gratuitos: App Service, Functions, etc.</li>
+</ul>
+<p><strong>GCP Free Tier:</strong></p>
+<ul>
+<li>$300 crédito para 90 días</li>
+<li>Always Free (limitado):</li>
+<li>1 f1-micro VM (0.2 vCPU, 0.6 GB RAM) en us-regions</li>
+<li>30 GB de Cloud Storage</li>
+<li>1 GB de Cloud Functions invocations</li>
+<li>BigQuery: 1 TB de consultas/mes</li>
+</ul>
 <hr>
 <h2 id="41-amazon-web-services-aws">4.1. Amazon Web Services (AWS)<a class="headerlink" href="#41-amazon-web-services-aws" title="Enlace a esta sección">¶</a></h2>
 <p><strong>Infraestructura global AWS:</strong></p>
-<p><strong>Datos actualizados (2024):</strong>
-- <strong>33 regiones geográficas</strong>
-- <strong>105 zonas de disponibilidad (AZs)</strong>
-- <strong>400+ ubicaciones de borde (Edge Locations)</strong> para CloudFront CDN
-- <strong>245+ países y territorios</strong> servidos</p>
-<p><strong>Nueva Región en España:</strong>
-- <strong>Nombre:</strong> AWS Europe (Spain)
-- <strong>Código:</strong> <code>eu-south-2</code>
-- <strong>Ubicación:</strong> Aragón
-- <strong>AZs:</strong> 3 zonas de disponibilidad
-- <strong>Disponible desde:</strong> 2022</p>
+<p><strong>Datos actualizados (2024):</strong></p>
+<ul>
+<li><strong>33 regiones geográficas</strong></li>
+<li><strong>105 zonas de disponibilidad (AZs)</strong></li>
+<li><strong>400+ ubicaciones de borde (Edge Locations)</strong> para CloudFront CDN</li>
+<li><strong>245+ países y territorios</strong> servidos</li>
+</ul>
+<p><strong>Nueva Región en España:</strong></p>
+<ul>
+<li><strong>Nombre:</strong> AWS Europe (Spain)</li>
+<li><strong>Código:</strong> <code>eu-south-2</code></li>
+<li><strong>Ubicación:</strong> Aragón</li>
+<li><strong>AZs:</strong> 3 zonas de disponibilidad</li>
+<li><strong>Disponible desde:</strong> 2022</li>
+</ul>
 <p><strong>Mapa interactivo:</strong> https://aws.amazon.com/about-aws/global-infrastructure/</p>
 <p><strong>Regiones AWS (principales):</strong></p>
 <table>
@@ -1885,11 +1897,13 @@
 <p><strong>Lista completa:</strong> https://aws.amazon.com/about-aws/global-infrastructure/regions_az/</p>
 <p><strong>Zonas de disponibilidad (AZs):</strong></p>
 <p><strong>Definición:</strong> Datacenters físicamente separados dentro de una región, conectados con enlaces de baja latencia (&lt;2 ms típicamente).</p>
-<p><strong>Características:</strong>
-- Separación física de varios kilómetros (protección contra desastres locales)
-- Alimentación eléctrica independiente
-- Redes redundantes
-- Nombradas con sufijos: -1a, -1b, -1c, etc.</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li>Separación física de varios kilómetros (protección contra desastres locales)</li>
+<li>Alimentación eléctrica independiente</li>
+<li>Redes redundantes</li>
+<li>Nombradas con sufijos: -1a, -1b, -1c, etc.</li>
+</ul>
 <p><strong>Ejemplo:</strong> Región <code>eu-south-2</code> (España) tiene 3 AZs:
 - <code>eu-south-2a</code>
 - <code>eu-south-2b</code>
@@ -4187,18 +4201,24 @@ Desplegar aplicaciones en múltiples AZs proporciona:
 ✅ Innovación en ML/AI
 ✅ K8s nativo (GKE)</p>
 <p><strong>Criterios de Selección:</strong></p>
-<p><strong>Elegir AWS si:</strong>
-- Necesitas máxima flexibilidad
-- Ecosistema de partners importante
-- Multi-región crítica</p>
-<p><strong>Elegir Azure si:</strong>
-- Ya usas Microsoft (Windows, Office 365, AD)
-- Power BI es crítico
-- Entorno híbrido on-premise + cloud</p>
-<p><strong>Elegir GCP si:</strong>
-- BigQuery es ideal para tu caso (DW serverless)
-- Foco en ML/AI avanzado
-- Contenedores y Kubernetes</p>
+<p><strong>Elegir AWS si:</strong></p>
+<ul>
+<li>Necesitas máxima flexibilidad</li>
+<li>Ecosistema de partners importante</li>
+<li>Multi-región crítica</li>
+</ul>
+<p><strong>Elegir Azure si:</strong></p>
+<ul>
+<li>Ya usas Microsoft (Windows, Office 365, AD)</li>
+<li>Power BI es crítico</li>
+<li>Entorno híbrido on-premise + cloud</li>
+</ul>
+<p><strong>Elegir GCP si:</strong></p>
+<ul>
+<li>BigQuery es ideal para tu caso (DW serverless)</li>
+<li>Foco en ML/AI avanzado</li>
+<li>Contenedores y Kubernetes</li>
+</ul>
 <p><strong>Para el proyecto final del curso (datos abiertos sanitarios):</strong>
 Recomendación: <strong>AWS</strong> o <strong>Azure</strong>
 - Ambos tienen región en España (cumplimiento RGPD facilitado)
