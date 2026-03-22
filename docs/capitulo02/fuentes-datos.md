@@ -138,6 +138,7 @@ df_pivot = df_ine.pivot_table(
 **Descripción**: Registros de altas hospitalarias
 
 **Contenido:**
+
 - Diagnóstico principal y secundarios (CIE-10)
 - Procedimientos quirúrgicos
 - Datos demográficos del paciente
@@ -358,12 +359,14 @@ def clean_nulls(df):
 **Marco legal:**
 
 **RGPD (Reglamento General de Protección de Datos)**
+
 - Datos de salud: Categoría especial (Art. 9)
 - Requiere consentimiento explícito
 - Derechos de los interesados
 - Obligaciones del responsable
 
 **LOPD-GDD (Ley Orgánica de Protección de Datos)**
+
 - Adaptación española del RGPD
 - Especificidades para datos de salud
 

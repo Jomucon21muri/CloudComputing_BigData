@@ -21,6 +21,7 @@ Otros proveedores relevantes: Alibaba Cloud, IBM Cloud, Oracle Cloud, Tencent Cl
 **Actualizado:** Febrero 2024
 
 **Regiones en España:**
+
 - **AWS**: Región `eu-south-2` (Aragón) - 3 AZs - Disponible desde 2022
 - **Azure**: Ninguna región específica en España aún
 - **GCP**: Región `europe-southwest1` (Madrid) - 3 zonas - Disponible desde 2023
@@ -109,6 +110,7 @@ Permiten estimar ahorro al migrar de on-premise a cloud:
 Todos los proveedores ofrecen capas gratuitas para probar:
 
 **AWS Free Tier:**
+
 - 750 horas/mes de EC2 t2.micro (1 vCPU, 1 GB RAM) - 12 meses
 - 5 GB de S3 Standard Storage - 12 meses
 - 750 horas/mes de RDS db.t2.micro - 12 meses
@@ -116,6 +118,7 @@ Todos los proveedores ofrecen capas gratuitas para probar:
 - 25 GB de DynamoDB - Siempre gratis
 
 **Azure Free Account:**
+
 - $200 crédito para 30 días
 - 12 meses de servicios gratuitos:
   - 750 horas/mes de B1S VM (1 vCPU, 1 GB RAM)
@@ -124,6 +127,7 @@ Todos los proveedores ofrecen capas gratuitas para probar:
 - Servicios siempre gratuitos: App Service, Functions, etc.
 
 **GCP Free Tier:**
+
 - $300 crédito para 90 días
 - Always Free (limitado):
   - 1 f1-micro VM (0.2 vCPU, 0.6 GB RAM) en us-regions
@@ -138,12 +142,14 @@ Todos los proveedores ofrecen capas gratuitas para probar:
 **Infraestructura global AWS:**
 
 **Datos actualizados (2024):**
+
 - **33 regiones geográficas**
 - **105 zonas de disponibilidad (AZs)**
 - **400+ ubicaciones de borde (Edge Locations)** para CloudFront CDN
 - **245+ países y territorios** servidos
 
 **Nueva Región en España:**
+
 - **Nombre:** AWS Europe (Spain)
 - **Código:** `eu-south-2`
 - **Ubicación:** Aragón
@@ -172,6 +178,7 @@ Todos los proveedores ofrecen capas gratuitas para probar:
 **Definición:** Datacenters físicamente separados dentro de una región, conectados con enlaces de baja latencia (<2 ms típicamente).
 
 **Características:**
+
 - Separación física de varios kilómetros (protección contra desastres locales)
 - Alimentación eléctrica independiente
 - Redes redundantes
@@ -1612,16 +1619,19 @@ prediction = endpoint.predict(instances=[
 **Criterios de Selección:**
 
 **Elegir AWS si:**
+
 - Necesitas máxima flexibilidad
 - Ecosistema de partners importante
 - Multi-región crítica
 
 **Elegir Azure si:**
+
 - Ya usas Microsoft (Windows, Office 365, AD)
 - Power BI es crítico
 - Entorno híbrido on-premise + cloud
 
 **Elegir GCP si:**
+
 - BigQuery es ideal para tu caso (DW serverless)
 - Foco en ML/AI avanzado
 - Contenedores y Kubernetes

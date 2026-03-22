@@ -337,12 +337,14 @@ graph TD
 **Componentes:**
 
 **1. Tabla de hechos (Fact Table):**
+
 - Contiene métricas/medidas numéricas (ventas, cantidad, costos)
 - Foreign keys a dimensiones
 - Grano (granularidad): Cada fila representa un evento/transacción
 - Gran volumen (millones-billones de filas)
 
 **2. Tablas de Dimensiones (Dimension Tables):**
+
 - Atributos descriptivos (quién, qué, dónde, cuándo)
 - Primary key (surrogate key)
 - Desnormalizadas (pueden tener redundancia)

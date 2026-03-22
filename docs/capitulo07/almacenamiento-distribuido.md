@@ -7,7 +7,7 @@
 ```
 ┌──────────────────────────────────────────────────────┐
 │              NameNode (Master)                       │
-│  - Mantiene metadatos (nombre, ubicación archivos)  │
+│  - Mantiene metadatos (nombre, ubicación archivos)   │
 │  - Gestiona namespace                                │
 │  - Coordina acceso                                   │
 └─────────────────────┬────────────────────────────────┘
@@ -25,14 +25,17 @@
 **Características clave:**
 
 **1. Bloques grandes:**
+
 - Tamaño típico: 128 MB o 256 MB
 - Por qué: minimiza seeks de disco, optimiza throughput
 
 **2. Replicación:**
+
 - Replication factor: 3 (por defecto)
 - Fault tolerance: puede perder 2 nodos sin pérdida de datos
 
 **3. Write-once-read-many:**
+
 - Archivos inmutables
 - Optimizado para análisis, no para actualizaciones
 
@@ -56,13 +59,15 @@ Si DataNode 3 falla:
 
 **Cuándo usar HDFS:**
 
-✅ **Usar HDFS si:**
+**Usar HDFS si:**
+
 - Cluster Hadoop on-premise
 - Procesamiento MapReduce/Spark batch
 - Archivos grandes (GBs)
 - Alta throughput más importante que latencia
 
-❌ **NO usar HDFS si:**
+**NO usar HDFS si:**
+
 - Cloud-native (usar S3/ADLS/GCS en su lugar)
 - Archivos pequeños (< 1 MB)
 - Actualizaciones frecuentes
@@ -83,15 +88,18 @@ Spark on EMR/Dataproc lee directamente de S3/GCS
 **Características:**
 
 **1. Object storage:**
+
 - No es un filesystem tradicional
 - Almacena objetos (archivos) con metadata
 - Claves (keys) simulan carpetas
 
 **2. Durabilidad y disponibilidad:**
+
 - Durabilidad: 99.999999999% (11 noves)
 - Disponibilidad: 99.99% (SLA)
 
 **3. Escalabilidad ilimitada:**
+
 - Sin límite de almacenamiento
 - Sin límite de objetos
 

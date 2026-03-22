@@ -2065,6 +2065,7 @@ Aprender todos: Años de experiencia
 ❌ **Portabilidad limitada** entre clouds
 
 **Estandarización en proceso:**
+
 - **Cloud Standards**: https://cloud-standards.org/
 - **TOSCA** (Topology and Orchestration Specification for Cloud Applications)
 - **OCCI** (Open Cloud Computing Interface)
@@ -2832,6 +2833,7 @@ Después: t3.2xlarge (8 vCPU, 32 GB RAM)
 | | Single point of failure |
 
 **Cuándo usar:**
+
 - Aplicaciones legacy no diseñadas para escalar horizontalmente
 - Bases de datos tradicionales
 - Fases iniciales

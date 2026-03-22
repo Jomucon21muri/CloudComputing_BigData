@@ -966,6 +966,7 @@ for key, value in config_final.items():
     - Nuevas tecnologías con alto riesgo
 
 **Ejemplos que requieren DPIA:**
+
 - Sistema de reconocimiento facial en espacios públicos
 - Base de datos médica centralizada
 - Scoring crediticio automatizado
@@ -1444,20 +1445,24 @@ for tipo, valores in pii_detectada.items():
 ## Referencias y recursos
 
 **Textos legales:**
+
 - [RGPD - Texto Oficial (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
 - [LOPDGDD - Ley Orgánica Española](https://www.boe.es/eli/es/lo/2018/12/05/3/con)
 
 **Autoridades de control:**
+
 - [AEPD - Agencia Española](https://www.aepd.es/)
 - [EDPB - European Data Protection Board](https://edpb.europa.eu/)
 - [ICO - UK Authority](https://ico.org.uk/)
 
 **Guías y Toolkit:**
+
 - [Guía AEPD para Responsables](https://www.aepd.es/es/documento/guia-rgpd-para-responsables.pdf)
 - [GDPR.eu - Resource Hub](https://gdpr.eu/)
 - [NIST Privacy Framework](https://www.nist.gov/privacy-framework)
 
 **Formación:**
+
 - [IAPP - International Association of Privacy Professionals](https://iapp.org/)
 - [Certificación CIPP/E (Certified Information Privacy Professional)](https://iapp.org/certify/cippe/)
 

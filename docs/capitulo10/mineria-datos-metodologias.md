@@ -32,6 +32,7 @@ graph TD
 **Objetivo:** Predecir a qué clase pertenece una instancia basándose en sus características.
 
 **Ejemplos:**
+
 - Clasificar emails como spam o no spam
 - Diagnosticar enfermedades (sano, enfermo)
 - Predecir abandono de clientes (churn)
@@ -119,6 +120,7 @@ print(feature_importance)
 **Objetivo:** Predecir un valor numérico continuo.
 
 **Ejemplos:**
+
 - Predecir precio de una casa
 - Estimar ventas futuras
 - Calcular consumo energético
@@ -169,6 +171,7 @@ print(f"R² Score: {r2:.3f}")
 **Objetivo:** Analizar datos para generar etiquetas, agrupando instancias similares sin conocer las clases de antemano.
 
 **Ejemplos:**
+
 - Segmentación de clientes
 - Agrupación de documentos similares
 - Detección de comunidades en redes sociales
@@ -335,6 +338,7 @@ print(reglas_sorted[['antecedents', 'consequents',
 **Objetivo:** Identificar instancias que se desvían significativamente del comportamiento normal.
 
 **Aplicaciones:**
+
 - Detección de fraude en tarjetas de crédito
 - Identificación de transacciones sospechosas
 - Detección de fallos en maquinaria (predictive maintenance)
@@ -433,6 +437,7 @@ print(f"\n🚨 Alerta: {resultado}")
 #### 1. Limpieza de Datos
 
 **Objetivos:**
+
 - Resolver inconsistencias entre los datos
 - Controlar y resolver valores faltantes
 - Eliminar o corregir outliers

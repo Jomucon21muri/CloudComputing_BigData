@@ -4,12 +4,14 @@
     En el contexto del Big Data y análisis avanzado de datos, **proteger la privacidad individual mientras se preserva la utilidad analítica** es un desafío fundamental. La anonimización no es simplemente eliminar nombres, sino aplicar técnicas rigurosas que eviten la re-identificación.
 
 **Contexto legal:**
+
 - **RGPD (2018)**: Requiere anonimización de datos personales
 - **LOPDGDD**: Normativa española de protección de datos
 - **HIPAA** (USA): Privacidad en datos de salud
 - **CCPA** (California): Derechos de privacidad del consumidor
 
 **Contexto legal:**
+
 - **RGPD (2018)**: Requiere anonimización de datos personales
 - **LOPDGDD**: Normativa española de protección de datos
 - **HIPAA** (USA): Privacidad en datos de salud
@@ -319,6 +321,7 @@ check_l_diversity(df_anon, ['age_range', 'zipcode'], 'disease', l=2)
     - $\delta$ **(delta)**: Probabilidad de fallo (típicamente muy pequeña)
 
 **Interpretación:**
+
 - $\varepsilon = 0$: Privacidad perfecta, pero sin utilidad
 - $\varepsilon = 0.1$: Privacidad muy fuerte (aplicaciones militares)
 - $\varepsilon = 1$: Privacidad fuerte (recomendado)
@@ -769,6 +772,7 @@ print(anonymized.text)
 ```
 
 **Características:**
+
 - Implementa k-anonimidad, l-diversidad, t-closeness
 - Soporta múltiples algoritmos de generalización
 - Métricas de utilidad de datos
@@ -1093,17 +1097,20 @@ Privacidad diferencial: ε=1.0
 ## Referencias y recursos
 
 **Papers fundamentales:**
+
 - Sweeney, L. (2002). "k-Anonymity: A Model for Protecting Privacy"
 - Dwork, C. (2006). "Differential Privacy"
 - Machanavajjhala et al. (2007). "L-Diversity: Privacy Beyond k-Anonymity"
 
 **Herramientas:**
+
 - [ARX Data Anonymization](https://arx.deidentifier.org/)
 - [Google DP Library](https://github.com/google/differential-privacy)
 - [Microsoft Presidio](https://microsoft.github.io/presidio/)
 - [IBM Diffprivlib](https://github.com/IBM/differential-privacy-library)
 
 **Estándares y guías:**
+
 - [NIST Privacy Framework](https://www.nist.gov/privacy-framework)
 - [ICO Anonymisation Code of Practice](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/anonymisation-and-pseudonymisation/)
 - [RGPD - Artículo 4(5)](https://gdpr-info.eu/art-4-gdpr/)

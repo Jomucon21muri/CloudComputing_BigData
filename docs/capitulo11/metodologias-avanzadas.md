@@ -44,6 +44,7 @@ graph LR
 **Objetivo:** Seleccionar el conjunto de datos objetivo desde la base de datos
 
 **Actividades:**
+
 - Identificar fuentes de datos relevantes
 - Extraer subconjuntos de datos según criterios del dominio
 - Definir el dataset target para análisis
@@ -97,6 +98,7 @@ print(f"   Categorías: {df_selected['categoria_producto'].unique()}")
 **Objetivo:** Limpiar y preparar los datos para análisis
 
 **Actividades:**
+
 - Eliminar ruido y outliers
 - Manejar valores faltantes
 - Resolver inconsistencias
@@ -161,6 +163,7 @@ print(f"   Registros eliminados: {len(df_selected) - len(df_clean):,} ({(1 - len
 **Objetivo:** Transformar datos en formato apropiado para minería
 
 **Actividades:**
+
 - Reducción de dimensionalidad (PCA, t-SNE)
 - Normalización y estandarización
 - Feature engineering
@@ -227,6 +230,7 @@ print(f"   Varianza explicada: {pca.explained_variance_ratio_.sum():.2%}")
 **Objetivo:** Aplicar algoritmos de minería para descubrir patrones
 
 **Actividades:**
+
 - Seleccionar algoritmos apropiados (clasificación, clustering, asociación)
 - Configurar parámetros
 - Entrenar modelos
@@ -320,6 +324,7 @@ print(classification_report(y_test, y_pred,
 **Objetivo:** Interpretar patrones descubiertos y evaluar utilidad
 
 **Actividades:**
+
 - Interpretar patrones en contexto de negocio
 - Validar con expertos del dominio
 - Evaluar impacto y utilidad
@@ -456,6 +461,7 @@ graph TD
 **Objetivo:** Determinar requisitos y necesidades del cliente
 
 **Actividades:**
+
 - Análisis de necesidades del negocio
 - Definición de objetivos del proyecto
 - Identificación de stakeholders
@@ -528,6 +534,7 @@ print(f"⏱️  Timeline: {proyecto_asum['restricciones']['tiempo']}")
 **Objetivo:** Desarrollo de la minería y análisis de datos
 
 **Actividades:**
+
 - Exploración y análisis de datos
 - Selección de técnicas y algoritmos
 - Diseño de arquitectura de solución
@@ -605,6 +612,7 @@ for modelo in diseño_solucion['modelos_propuestos']:
 **Objetivo:** Implementar resultados en la empresa
 
 **Actividades:**
+
 - Desarrollo de solución completa
 - Integración con sistemas existentes
 - Pruebas de aceptación
@@ -676,6 +684,7 @@ for sprint, detalles in plan_implementacion.items():
 **Objetivo:** Control e introducción de ajustes continuos
 
 **Actividades:**
+
 - Monitoreo de performance
 - Detección de data drift
 - Reentrenamiento de modelos
@@ -1252,6 +1261,7 @@ graph LR
 ```
 
 **Características únicas:**
+
 - Integra **backlog ágil** con ciencia de datos
 - Énfasis en **mejora continua**
 - **Observabilidad** y feedback de usuarios
@@ -1270,6 +1280,7 @@ graph LR
 | **Distribución** | • Deployment<br/>• Monitoreo<br/>• Mantenimiento | Puesta en producción |
 
 **Características:**
+
 - Muy **flexible** y adaptable
 - Ideal para **startups y equipos pequeños**
 - Menos prescriptivo que CRISP-DM
@@ -1316,11 +1327,13 @@ graph TD
 ```
 
 **Roles:**
+
 - **Product Owner**: Define prioridades analytics
 - **Scrum Master**: Facilita proceso ágil
 - **Data Science Team**: Analistas + Data Scientists + Engineers
 
 **Artefactos:**
+
 - **Product Backlog**: User stories de analytics
 - **Sprint Backlog**: Tareas específicas del sprint
 - **Increment**: Dashboard, modelo, insight accionable

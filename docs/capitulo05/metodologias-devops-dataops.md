@@ -7,6 +7,7 @@
 **DevOps** es una combinación de **filosofías culturales**, **prácticas** y **herramientas** que aumenta la capacidad de una organización para distribuir aplicaciones y servicios a gran velocidad.
 
 **Origen del término:**
+
 - **Dev** (Development - Desarrollo)
 - **Ops** (Operations - Operaciones)
 
