@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -1476,7 +1476,9 @@
 
 <h1 id="capitulo-6-arquitectura-de-data-lake">CAPÍTULO 6: Arquitectura de Data Lake<a class="headerlink" href="#capitulo-6-arquitectura-de-data-lake" title="Enlace a esta sección">¶</a></h1>
 <h2 id="61-que-es-un-data-lake">6.1. ¿Qué es un Data Lake?<a class="headerlink" href="#61-que-es-un-data-lake" title="Enlace a esta sección">¶</a></h2>
+<blockquote>
 <p><strong>Data Lake:</strong> Repositorio centralizado que permite almacenar todos los datos estructurados, semiestructurados y no estructurados a cualquier escala, en su formato nativo, con esquema-on-read.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -1543,21 +1545,29 @@
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>  Rápido al ingestar, flexible en análisis
 </span></code></pre></div></td></tr></tbody></table></div><p></p>
 <p><strong>Características de un Data Lake:</strong></p>
-<p><strong>1. Almacenamiento de todos los tipos de datos:</strong>
-- Estructurados: CSV, Parquet, Avro
-- Semi-estructurados: JSON, XML
-- No estructurados: PDFs, imágenes, vídeos, logs</p>
-<p><strong>2. Almacenamiento económico:</strong>
-- Object storage barato (S3, ADLS, GCS)
-- $0.023/GB/mes vs $1-10/GB/mes en DW</p>
-<p><strong>3. Escalabilidad:</strong>
-- Petabyte-scale
-- Sin límites prácticos</p>
-<p><strong>4. Flexibilidad:</strong>
-- Sin esquema predefinidoNo rechaza datos
-- Exploración sin restricciones</p>
+<p><strong>1. Almacenamiento de todos los tipos de datos:</strong></p>
+<ul>
+<li>Estructurados: CSV, Parquet, Avro</li>
+<li>Semi-estructurados: JSON, XML</li>
+<li>No estructurados: PDFs, imágenes, vídeos, logs</li>
+</ul>
+<p><strong>2. Almacenamiento económico:</strong></p>
+<ul>
+<li>Object storage barato (S3, ADLS, GCS)</li>
+<li>$0.023/GB/mes vs $1-10/GB/mes en DW</li>
+</ul>
+<p><strong>3. Escalabilidad:</strong></p>
+<ul>
+<li>Petabyte-scale</li>
+<li>Sin límites prácticos</li>
+</ul>
+<p><strong>4. Flexibilidad:</strong></p>
+<ul>
+<li>Sin esquema predefinidoNo rechaza datos</li>
+<li>Exploración sin restricciones</li>
+</ul>
 <p><strong>5. Integración con herramientas Big Data:</strong>
-- Compatible con Spark, Hadoop, Presto, etc.</p>
+Compatible con Spark, Hadoop, Presto, etc.</p>
 <h2 id="62-arquitectura-de-tres-capas-zonas">6.2. Arquitectura de tres capas (zonas)<a class="headerlink" href="#62-arquitectura-de-tres-capas-zonas" title="Enlace a esta sección">¶</a></h2>
 <div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
@@ -1607,56 +1617,58 @@
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>│                   RAW ZONE                          │
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>│  (Datos crudos, tal como llegan)                    │
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>│                                                     │
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>│  /raw/covid/2026/02/19/casos.csv                   │
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>│  /raw/ine/poblacion/pob_2024.xlsx                  │
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>│  /raw/oms/epidemias/brotes.json                    │
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>│  /raw/covid/2026/02/19/casos.csv                    │
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>│  /raw/ine/poblacion/pob_2024.xlsx                   │
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>│  /raw/oms/epidemias/brotes.json                     │
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>│                                                     │
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>│  Características:                                   │
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>│  - Inmutables (append-only)                        │
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>│  - Formato original                                │
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>│  - Sin transformaciones                            │
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>│  - Particionado por fecha                          │
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>│  - Inmutables (append-only)                         │
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>│  - Formato original                                 │
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>│  - Sin transformaciones                             │
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>│  - Particionado por fecha                           │
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a>└────────────────┬────────────────────────────────────┘
 </span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a>                 ↓ ETL/Limpieza/Validación
 </span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a>┌─────────────────────────────────────────────────────┐
 </span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a>│                 TRUSTED ZONE                        │
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a>│  (Datos validados, limpios, formato estándar)      │
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a>│  (Datos validados, limpios, formato estándar)       │
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a>│                                                     │
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a>│  /trusted/covid/casos_validados.parquet            │
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a>│  /trusted/ine/poblacion_clean.parquet              │
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a>│  /trusted/oms/brotes_normalized.parquet            │
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a>│  /trusted/covid/casos_validados.parquet             │
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a>│  /trusted/ine/poblacion_clean.parquet               │
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a>│  /trusted/oms/brotes_normalized.parquet             │
 </span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23"></a>│                                                     │
 </span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24"></a>│  Características:                                   │
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25"></a>│  - Formatos columnares (Parquet, Avro)            │
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26"></a>│  - Comprimidos                                     │
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27"></a>│  - Esquemas validados                              │
-</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28"></a>│  - Deduplicados                                    │
-</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29"></a>│  - Particionados                                   │
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25"></a>│  - Formatos columnares (Parquet, Avro)              │
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26"></a>│  - Comprimidos                                      │
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27"></a>│  - Esquemas validados                               │
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28"></a>│  - Deduplicados                                     │
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29"></a>│  - Particionados                                    │
 </span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30"></a>└────────────────┬────────────────────────────────────┘
 </span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31"></a>                 ↓ Transformaciones/Agregaciones
 </span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32"></a>┌─────────────────────────────────────────────────────┐
 </span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33"></a>│                 REFINED ZONE                        │
-</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34"></a>│  (Datos agregados, listos para consumo)            │
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34"></a>│  (Datos agregados, listos para consumo)             │
 </span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35"></a>│                                                     │
-</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36"></a>│  /refined/covid_por_ccaa_mes/                      │
-</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37"></a>│  /refined/poblacion_agregada/                      │
-</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38"></a>│  /refined/indicadores_epidemiologicos/             │
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36"></a>│  /refined/covid_por_ccaa_mes/                       │
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37"></a>│  /refined/poblacion_agregada/                       │
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38"></a>│  /refined/indicadores_epidemiologicos/              │
 </span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39"></a>│                                                     │
 </span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40"></a>│  Características:                                   │
-</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41"></a>│  - Agregados y optimizados                         │
-</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42"></a>│  - Modelos dimensionales                           │
-</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43"></a>│  - Optimizados para queries                        │
-</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44"></a>│  - Exportables a DW                                │
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41"></a>│  - Agregados y optimizados                          │
+</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42"></a>│  - Modelos dimensionales                            │
+</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43"></a>│  - Optimizados para queries                         │
+</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44"></a>│  - Exportables a DW                                 │
 </span><span id="__span-2-45"><a id="__codelineno-2-45" name="__codelineno-2-45"></a>└─────────────────────────────────────────────────────┘
 </span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Zona RAW (cruda):</strong></p>
 <p><strong>Propósito:</strong> Almacenar datos tal como llegan, sin modificar.</p>
-<p><strong>Características:</strong>
-- <strong>Inmutable</strong>: Nunca se modifican los archivos (append-only)
-- <strong>Formato original</strong>: CSV si llega CSV, JSON si llega JSON
-- <strong>Particionado temporal</strong>: Por fecha de ingesta
-- <strong>Retención larga</strong>: Mantenerdatos años (económico)
-- <strong>Backup obligatorio</strong>: Son los datos fuente</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li><strong>Inmutable</strong>: Nunca se modifican los archivos (append-only)</li>
+<li><strong>Formato original</strong>: CSV si llega CSV, JSON si llega JSON</li>
+<li><strong>Particionado temporal</strong>: Por fecha de ingesta</li>
+<li><strong>Retención larga</strong>: Mantenerdatos años (económico)</li>
+<li><strong>Backup obligatorio</strong>: Son los datos fuente</li>
+</ul>
 <p><strong>Estructura de carpetas:</strong>
 </p><div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
@@ -1769,13 +1781,15 @@
 </span></code></pre></div></td></tr></tbody></table></div><p></p>
 <p><strong>Zona TRUSTED (confiable):</strong></p>
 <p><strong>Propósito:</strong> Datos validados, limpios y en formatos optimizados.</p>
-<p><strong>Características:</strong>
-- <strong>Formato columnar</strong>: Parquet (preferred) o Avro
-- <strong>Comprimido</strong>: Snappy, GZIP
-- <strong>Esquema definido</strong>: Schema enforcement
-- <strong>Deduplicado</strong>: Sin duplicados
-- <strong>Validado</strong>: Reglas de calidad aplicadas
-- <strong>Particionado</strong>: Por columnas de consulta frecuente</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li><strong>Formato columnar</strong>: Parquet (preferred) o Avro</li>
+<li><strong>Comprimido</strong>: Snappy, GZIP</li>
+<li><strong>Esquema definido</strong>: Schema enforcement</li>
+<li><strong>Deduplicado</strong>: Sin duplicados</li>
+<li><strong>Validado</strong>: Reglas de calidad aplicadas</li>
+<li><strong>Particionado</strong>: Por columnas de consulta frecuente</li>
+</ul>
 <p><strong>Transformaciones típicas:</strong>
 </p><div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
@@ -1940,12 +1954,14 @@
 <p><strong>Parquet</strong> es el estándar de facto para Data Lakes analíticos.</p>
 <p><strong>Zona REFINED (refinada):</strong></p>
 <p><strong>Propósito:</strong> Datos agregados, transformados y listos para consumo directo.</p>
-<p><strong>Características:</strong>
-- <strong>Agregaciones pre-calculadas</strong>: Sumas, promedios, etc.
-- <strong>Modelos dimensionales</strong>: Preparados para OLAP
-- <strong>Optimizados para queries específicas</strong>: Índices, ordenación
-- <strong>Exportables a DW</strong>: Formato compatible con Redshift, BigQuery, etc.
-- <strong>Documentados</strong>: Metadatos ricos</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li><strong>Agregaciones pre-calculadas</strong>: Sumas, promedios, etc.</li>
+<li><strong>Modelos dimensionales</strong>: Preparados para OLAP</li>
+<li><strong>Optimizados para queries específicas</strong>: Índices, ordenación</li>
+<li><strong>Exportables a DW</strong>: Formato compatible con Redshift, BigQuery, etc.</li>
+<li><strong>Documentados</strong>: Metadatos ricos</li>
+</ul>
 <p><strong>Ejemplo de transformación Trusted → Refined:</strong></p>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
@@ -2104,14 +2120,18 @@
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="n">df</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">"year"</span><span class="p">,</span> <span class="s2">"month"</span><span class="p">,</span> <span class="s2">"ccaa"</span><span class="p">)</span><span class="o">.</span><span class="n">parquet</span><span class="p">(</span><span class="s2">"s3://bucket/covid/"</span><span class="p">)</span>
 </span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Best practices de particionado:</strong></p>
-<p><strong>✅ Hacer:</strong>
-- Particionar por columnas de filtro frecuente (fecha, región)
-- Tamaño de partición: 128 MB - 1 GB (óptimo para Spark)
-- Usar tipos de dato apropiados (int para year, no string)</p>
-<p><strong>❌ Evitar:</strong>
-- Particionar por columnas de alta cardinalidad (ej: usuario_id con millones de valores)
-- Particiones muy pequeñas (&lt; 10 MB) → muchos archivos pequeños
-- Demasiados niveles de particionado (&gt; 4 niveles)</p>
+<p><strong>✅ Hacer:</strong></p>
+<ul>
+<li>Particionar por columnas de filtro frecuente (fecha, región)</li>
+<li>Tamaño de partición: 128 MB - 1 GB (óptimo para Spark)</li>
+<li>Usar tipos de dato apropiados (int para year, no string)</li>
+</ul>
+<p><strong>❌ Evitar:</strong></p>
+<ul>
+<li>Particionar por columnas de alta cardinalidad (ej: usuario_id con millones de valores)</li>
+<li>Particiones muy pequeñas (&lt; 10 MB) → muchos archivos pequeños</li>
+<li>Demasiados niveles de particionado (&gt; 4 niveles)</li>
+</ul>
 <p><strong>Ejemplo de problemas:</strong></p>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
 <span class="normal"><a href="#__codelineno-14-2">2</a></span>
@@ -2119,21 +2139,23 @@
 <span class="normal"><a href="#__codelineno-14-4">4</a></span>
 <span class="normal"><a href="#__codelineno-14-5">5</a></span>
 <span class="normal"><a href="#__codelineno-14-6">6</a></span>
-<span class="normal"><a href="#__codelineno-14-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c1"># ❌ MAL: Particionar por usuario (millones de particiones)</span>
+<span class="normal"><a href="#__codelineno-14-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c1"># MAL: Particionar por usuario (millones de particiones)</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="n">df</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">"usuario_id"</span><span class="p">)</span><span class="o">.</span><span class="n">parquet</span><span class="p">(</span><span class="s2">"s3://bucket/datos/"</span><span class="p">)</span>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="c1"># Resultado: 5,000,000 carpetas con 1 archivo cada una → performance horrible</span>
 </span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4"></a>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="c1"># ✅ BIEN: Particionar por fecha</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="c1"># BIEN: Particionar por fecha</span>
 </span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="n">df</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">partitionBy</span><span class="p">(</span><span class="s2">"year"</span><span class="p">,</span> <span class="s2">"month"</span><span class="p">)</span><span class="o">.</span><span class="n">parquet</span><span class="p">(</span><span class="s2">"s3://bucket/datos/"</span><span class="p">)</span>
 </span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="c1"># Resultado: 24 carpetas para 2 años → performance óptima</span>
 </span></code></pre></div></td></tr></tbody></table></div>
 <h2 id="formatos-de-almacenamiento">Formatos de almacenamiento<a class="headerlink" href="#formatos-de-almacenamiento" title="Enlace a esta sección">¶</a></h2>
 <p><strong>Parquet (recomendado):</strong></p>
-<p><strong>Características:</strong>
-- <strong>Columnar</strong>: Almacena por columnas, no por filas
-- <strong>Comprimido</strong>: Snappy, GZIP, LZO
-- <strong>Esquema incluido</strong>: Autodescriptivo
-- <strong>Optimizado para análisis</strong>: Lee solo columnas necesarias</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li><strong>Columnar</strong>: Almacena por columnas, no por filas</li>
+<li><strong>Comprimido</strong>: Snappy, GZIP, LZO</li>
+<li><strong>Esquema incluido</strong>: Autodescriptivo</li>
+<li><strong>Optimizado para análisis</strong>: Lee solo columnas necesarias</li>
+</ul>
 <p><strong>Ventajas:</strong></p>
 <table>
 <thead>
@@ -2206,20 +2228,26 @@
 </span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15"></a>→ Parquet: Lee SOLO fecha, casos, ccaa
 </span></code></pre></div></td></tr></tbody></table></div>
 <p><strong>Avro:</strong></p>
-<p><strong>Características:</strong>
-- <strong>Row-based</strong>: Almacena por filas
-- <strong>Esquema incluido</strong>: en JSON
-- <strong>Evolución de esquema</strong>: Soporta cambios de esquema</p>
-<p><strong>Cuándo usar Avro:</strong>
-- Streaming de datos
-- Aplicaciones que necesitan escribir filas completas frecuentemente
-- Kafka con Schema Registry</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li><strong>Row-based</strong>: Almacena por filas</li>
+<li><strong>Esquema incluido</strong>: en JSON</li>
+<li><strong>Evolución de esquema</strong>: Soporta cambios de esquema</li>
+</ul>
+<p><strong>Cuándo usar Avro:</strong></p>
+<ul>
+<li>Streaming de datos</li>
+<li>Aplicaciones que necesitan escribir filas completas frecuentemente</li>
+<li>Kafka con Schema Registry</li>
+</ul>
 <p><strong>Delta Lake (evolución de Parquet):</strong></p>
-<p><strong>Características:</strong>
-- <strong>Parquet con transacciones ACID</strong>
-- <strong>Time Travel</strong>: Versiones de datos
-- <strong>Schema Evolution</strong>: Cambiar esquema sin reescribir
-- <strong>UPSERT/DELETE</strong>: Actualizaciones y borrados eficientes</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li><strong>Parquet con transacciones ACID</strong></li>
+<li><strong>Time Travel</strong>: Versiones de datos</li>
+<li><strong>Schema Evolution</strong>: Cambiar esquema sin reescribir</li>
+<li><strong>UPSERT/DELETE</strong>: Actualizaciones y borrados eficientes</li>
+</ul>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
@@ -2269,13 +2297,15 @@
 <h2 id="data-lake-vs-data-swamp">Data Lake vs Data Swamp<a class="headerlink" href="#data-lake-vs-data-swamp" title="Enlace a esta sección">¶</a></h2>
 <p><strong>Riesgo: Data Swamp (pantano de datos):</strong></p>
 <p><strong>Data Swamp</strong>: Data Lake sin gobierno, metadatos ni organización → inútil.</p>
-<p><strong>Síntomas:</strong>
-- ❌ Nadie sabe qué datos hay
-- ❌ Duplicación masiva
-- ❌ Sin documentación
-- ❌ Datos obsoletos mezclados con actuales
-- ❌ Sin control de calidad
-- ❌ Sin control de acceso</p>
+<p><strong>Síntomas:</strong></p>
+<ul>
+<li>❌ Nadie sabe qué datos hay</li>
+<li>❌ Duplicación masiva</li>
+<li>❌ Sin documentación</li>
+<li>❌ Datos obsoletos mezclados con actuales</li>
+<li>❌ Sin control de calidad</li>
+<li>❌ Sin control de acceso</li>
+</ul>
 <p><strong>Cómo evitar Data Swamp:</strong></p>
 <p><strong>1. Catálogo de datos obligatorio:</strong></p>
 <div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
