@@ -1,6 +1,6 @@
 # Cloud Computing & Big Data
 ##  Sitio Web
-**[https://jomucon21muri.github.io/CC-BD/](https://jomucon21muri.github.io/CloudComputing_BigData/)**
+**https://jomucon21muri.github.io/CloudComputing_BigData/**
 
 
 ##  Licencia
